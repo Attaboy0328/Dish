@@ -1,13 +1,14 @@
-import type { GameState, RevealMode } from '../types/recipe'
+import type { DishCount, GameState, RevealMode } from '../types/recipe'
 
-export const STORAGE_KEY = 'kai-fan-box:v1'
+export const STORAGE_KEY = 'kai-fan-box:v2'
 
 export const defaultState = (): GameState => ({
   streak: 0,
   lastCheckInDate: null,
-  revealedUnlocks: [],
   revealMode: 'box',
   avoidYesterday: true,
+  includeColdDishes: false,
+  dishCount: 3,
   yesterdayIds: [],
   yesterdayDate: null,
   today: null,
@@ -17,11 +18,22 @@ export function loadState(): GameState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return defaultState()
-    const parsed = JSON.parse(raw) as GameState
-    return { ...defaultState(), ...parsed }
+    const parsed = JSON.parse(raw) as Partial<GameState>
+    return {
+      ...defaultState(),
+      ...parsed,
+      dishCount: normalizeDishCount(parsed.dishCount),
+      includeColdDishes: Boolean(parsed.includeColdDishes),
+    }
   } catch {
     return defaultState()
   }
+}
+
+export function normalizeDishCount(value: unknown): DishCount {
+  const n = Number(value)
+  if (n === 2 || n === 3 || n === 4 || n === 5) return n
+  return 3
 }
 
 export function saveState(state: GameState): void {

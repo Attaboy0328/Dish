@@ -11,16 +11,17 @@ type Props = {
 }
 
 export function FlipCardReveal({ recipes, alreadyRevealed, onComplete, onSelect }: Props) {
+  const n = recipes.length
   const [flipped, setFlipped] = useState<boolean[]>(
-    alreadyRevealed ? [true, true, true] : [false, false, false],
+    alreadyRevealed ? Array(n).fill(true) : Array(n).fill(false),
   )
   const [started, setStarted] = useState(alreadyRevealed)
 
   const flipAll = async () => {
     if (started) return
     setStarted(true)
-    for (let i = 0; i < 3; i++) {
-      await new Promise((r) => setTimeout(r, 380))
+    for (let i = 0; i < n; i++) {
+      await new Promise((r) => setTimeout(r, 320))
       setFlipped((prev) => {
         const next = [...prev]
         next[i] = true
@@ -32,7 +33,7 @@ export function FlipCardReveal({ recipes, alreadyRevealed, onComplete, onSelect 
 
   return (
     <div className={styles.wrap}>
-      <div className={styles.row}>
+      <div className={`${styles.row} ${n > 3 ? styles.rowWrap : ''}`}>
         {recipes.map((recipe, i) => (
           <button
             key={recipe.id}
@@ -48,7 +49,7 @@ export function FlipCardReveal({ recipes, alreadyRevealed, onComplete, onSelect 
               style={{ transformStyle: 'preserve-3d' }}
             >
               <div className={`${styles.face} ${styles.back}`}>吃</div>
-              <div className={`${styles.face} ${styles.front} ${styles[recipe.rarity] ?? ''}`}>
+              <div className={`${styles.face} ${styles.front}`}>
                 <span className={styles.emoji}>{recipe.emoji}</span>
                 <span className={styles.name}>{recipe.name}</span>
               </div>
@@ -59,7 +60,7 @@ export function FlipCardReveal({ recipes, alreadyRevealed, onComplete, onSelect 
 
       {!alreadyRevealed && !started && (
         <>
-          <p className={styles.hint}>翻开三张牌，定今日菜单</p>
+          <p className={styles.hint}>翻开 {n} 张牌，定今日菜单</p>
           <button type="button" className={styles.startBtn} onClick={flipAll}>
             开始翻牌
           </button>

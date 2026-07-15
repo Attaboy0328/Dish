@@ -12,6 +12,10 @@
   perspective: 800px;
 }
 
+.boxesWrap {
+  grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
+}
+
 .box {
   aspect-ratio: 0.85;
   border: none;

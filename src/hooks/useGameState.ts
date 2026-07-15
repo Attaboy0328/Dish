@@ -1,11 +1,25 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import recipesData from '../data/recipes.json'
-import type { GameState, Recipe, RevealMode } from '../types/recipe'
-import { buildPool, drawThree, getUnlockedIds } from '../lib/draw'
+import type { DishCount, GameState, Recipe, RevealMode } from '../types/recipe'
+import { buildPool, drawRecipes } from '../lib/draw'
 import { daysBetween, todayKey, yesterdayKey } from '../lib/rng'
-import { defaultState, loadState, saveState } from '../lib/storage'
+import { defaultState, loadState, normalizeDishCount, saveState } from '../lib/storage'
 
 const recipes = recipesData as Recipe[]
+
+function yesterdayIdsFor(state: GameState): string[] {
+  if (!state.avoidYesterday) return []
+  if (state.yesterdayDate === yesterdayKey()) return state.yesterdayIds
+  return state.yesterdayIds
+}
+
+function drawForState(state: GameState, seed: string) {
+  const yIds = yesterdayIdsFor(state)
+  const pool = buildPool(recipes, state.avoidYesterday, yIds, state.includeColdDishes)
+  const count = normalizeDishCount(state.dishCount)
+  const source = pool.length >= count ? pool : buildPool(recipes, false, [], state.includeColdDishes)
+  return drawRecipes(source.length >= count ? source : recipes.filter((r) => state.includeColdDishes || r.category !== '凉菜'), seed, count)
+}
 
 export function useGameState() {
   const [state, setState] = useState<GameState>(() => loadState())
@@ -15,13 +29,11 @@ export function useGameState() {
     setState(next)
   }, [])
 
-  /** Sync today slot when date changes */
   useEffect(() => {
     const today = todayKey()
     setState((prev) => {
       let next = { ...prev }
 
-      // Move confirmed yesterday into yesterdayIds if rolling into new day
       if (prev.today && prev.today.date !== today) {
         if (prev.today.confirmed) {
           next = {
@@ -33,7 +45,6 @@ export function useGameState() {
         next.today = null
       }
 
-      // Check streak break (missed a day)
       if (next.lastCheckInDate && next.lastCheckInDate !== today) {
         const gap = daysBetween(next.lastCheckInDate, today)
         if (gap > 1) {
@@ -41,29 +52,19 @@ export function useGameState() {
         }
       }
 
-      // Ensure today draw exists
       if (!next.today) {
-        const seed = `${today}#0`
-        const unlocked = getUnlockedIds(recipes, next.streak)
-        const allUnlocked = [...new Set([...unlocked, ...next.revealedUnlocks])]
-        const yIds =
-          next.avoidYesterday && next.yesterdayDate === yesterdayKey()
-            ? next.yesterdayIds
-            : next.avoidYesterday
-              ? next.yesterdayIds
-              : []
-        const pool = buildPool(recipes, next.streak, allUnlocked, next.avoidYesterday, yIds)
-        const picks = drawThree(pool.length >= 3 ? pool : recipes, seed)
+        const picks = drawForState(next, `${today}#0`)
         next = {
           ...next,
           today: {
             date: today,
             recipeIds: picks.map((p) => p.id),
+            dishCount: normalizeDishCount(next.dishCount),
+            includeColdDishes: next.includeColdDishes,
             rerollsLeft: 1,
             confirmed: false,
             revealed: false,
           },
-          revealedUnlocks: allUnlocked,
         }
       }
 
@@ -79,29 +80,51 @@ export function useGameState() {
       .filter(Boolean) as Recipe[]
   }, [state.today])
 
+  const redrawToday = useCallback(
+    (base: GameState, keepRerolls?: number) => {
+      if (base.today?.confirmed) return base
+      const today = todayKey()
+      const rerollsLeft = keepRerolls ?? base.today?.rerollsLeft ?? 1
+      const attempt = Math.max(0, 1 - rerollsLeft)
+      const picks = drawForState(base, `${today}#opt${base.dishCount}${base.includeColdDishes ? 'c' : 'n'}#${attempt}`)
+      const next = {
+        ...base,
+        today: {
+          date: today,
+          recipeIds: picks.map((p) => p.id),
+          dishCount: normalizeDishCount(base.dishCount),
+          includeColdDishes: base.includeColdDishes,
+          rerollsLeft,
+          confirmed: false,
+          revealed: false,
+        },
+      }
+      persist(next)
+      return next
+    },
+    [persist],
+  )
+
   const markRevealed = useCallback(() => {
     if (!state.today || state.today.revealed) return
-    const next = {
+    persist({
       ...state,
       today: { ...state.today, revealed: true },
-    }
-    persist(next)
+    })
   }, [state, persist])
 
   const reroll = useCallback(() => {
     if (!state.today || state.today.rerollsLeft <= 0 || state.today.confirmed) return
     const today = todayKey()
     const attempt = 2 - state.today.rerollsLeft
-    const seed = `${today}#${attempt}`
-    const unlocked = [...new Set([...getUnlockedIds(recipes, state.streak), ...state.revealedUnlocks])]
-    const yIds = state.avoidYesterday ? state.yesterdayIds : []
-    const pool = buildPool(recipes, state.streak, unlocked, state.avoidYesterday, yIds)
-    const picks = drawThree(pool.length >= 3 ? pool : recipes, seed)
+    const picks = drawForState(state, `${today}#${attempt}`)
     persist({
       ...state,
       today: {
         date: today,
         recipeIds: picks.map((p) => p.id),
+        dishCount: normalizeDishCount(state.dishCount),
+        includeColdDishes: state.includeColdDishes,
         rerollsLeft: state.today.rerollsLeft - 1,
         confirmed: false,
         revealed: false,
@@ -120,13 +143,10 @@ export function useGameState() {
     } else {
       streak = 1
     }
-    const newlyUnlocked = getUnlockedIds(recipes, streak)
-    const revealedUnlocks = [...new Set([...state.revealedUnlocks, ...newlyUnlocked])]
     persist({
       ...state,
       streak,
       lastCheckInDate: today,
-      revealedUnlocks,
       yesterdayIds: state.today.recipeIds,
       yesterdayDate: today,
       today: { ...state.today, confirmed: true },
@@ -147,33 +167,45 @@ export function useGameState() {
     [state, persist],
   )
 
+  const setIncludeColdDishes = useCallback(
+    (value: boolean) => {
+      if (state.today?.confirmed) {
+        persist({ ...state, includeColdDishes: value })
+        return
+      }
+      redrawToday({ ...state, includeColdDishes: value })
+    },
+    [state, persist, redrawToday],
+  )
+
+  const setDishCount = useCallback(
+    (count: DishCount) => {
+      if (state.today?.confirmed) {
+        persist({ ...state, dishCount: count })
+        return
+      }
+      redrawToday({ ...state, dishCount: count })
+    },
+    [state, persist, redrawToday],
+  )
+
   const reset = useCallback(() => {
     const fresh = defaultState()
-    persist(fresh)
-    // force redraw next tick
     const today = todayKey()
-    const pool = buildPool(recipes, 0, [], true, [])
-    const picks = drawThree(pool.length >= 3 ? pool : recipes, `${today}#0`)
+    const picks = drawForState(fresh, `${today}#0`)
     persist({
       ...fresh,
       today: {
         date: today,
         recipeIds: picks.map((p) => p.id),
+        dishCount: 3,
+        includeColdDishes: false,
         rerollsLeft: 1,
         confirmed: false,
         revealed: false,
       },
     })
   }, [persist])
-
-  const isRecipeUnlocked = useCallback(
-    (recipe: Recipe) => {
-      if (recipe.unlockAtStreak === 0) return true
-      if (state.streak >= recipe.unlockAtStreak) return true
-      return state.revealedUnlocks.includes(recipe.id)
-    },
-    [state.streak, state.revealedUnlocks],
-  )
 
   return {
     recipes,
@@ -184,8 +216,9 @@ export function useGameState() {
     confirm,
     setRevealMode,
     setAvoidYesterday,
+    setIncludeColdDishes,
+    setDishCount,
     reset,
-    isRecipeUnlocked,
   }
 }
 

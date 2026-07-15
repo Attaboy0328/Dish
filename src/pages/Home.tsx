@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import type { GameApi } from '../hooks/useGameState'
 import type { Recipe } from '../types/recipe'
 import { BlindBoxReveal } from '../components/BlindBoxReveal'
@@ -12,8 +12,6 @@ import styles from './Home.module.css'
 
 type Props = { game: GameApi }
 
-const MILESTONES = [3, 7, 14, 30]
-
 export function Home({ game }: Props) {
   const {
     state,
@@ -21,22 +19,16 @@ export function Home({ game }: Props) {
     markRevealed,
     reroll,
     confirm,
-    isRecipeUnlocked,
     setRevealMode,
     setAvoidYesterday,
+    setIncludeColdDishes,
+    setDishCount,
   } = game
   const [selected, setSelected] = useState<Recipe | null>(null)
   const revealed = state.today?.revealed ?? false
   const confirmed = state.today?.confirmed ?? false
   const mode = state.revealMode
-
-  const unlockMsg = useMemo(() => {
-    if (!confirmed) return null
-    if (MILESTONES.includes(state.streak)) {
-      return `连吃 ${state.streak} 天！一批稀有菜已解锁，去图鉴看看～`
-    }
-    return null
-  }, [confirmed, state.streak])
+  const count = state.dishCount
 
   const Reveal =
     mode === 'flip' ? FlipCardReveal : mode === 'wheel' ? WheelReveal : BlindBoxReveal
@@ -46,7 +38,11 @@ export function Home({ game }: Props) {
       <header className={styles.hero}>
         <div>
           <p className={styles.eyebrow}>{confirmed ? '今日菜单已确定' : '今日菜单'}</p>
-          <h2>{confirmed ? '安心开饭吧' : '三道菜，交给一点运气'}</h2>
+          <h2>
+            {confirmed
+              ? '安心开饭吧'
+              : `${count} 道菜，交给一点运气`}
+          </h2>
         </div>
         <span className={`${styles.status} ${confirmed ? styles.statusDone : ''}`}>
           {confirmed && <CheckIcon size={15} />}
@@ -57,15 +53,19 @@ export function Home({ game }: Props) {
       <TodayControls
         mode={mode}
         avoidYesterday={state.avoidYesterday}
+        includeColdDishes={state.includeColdDishes}
+        dishCount={count}
         disabled={confirmed}
         onModeChange={setRevealMode}
         onAvoidChange={setAvoidYesterday}
+        onIncludeColdChange={setIncludeColdDishes}
+        onDishCountChange={setDishCount}
       />
 
       <section className={styles.stage}>
-        {todayRecipes.length === 3 && (
+        {todayRecipes.length > 0 && (
           <Reveal
-            key={`${state.today?.date}-${state.today?.rerollsLeft}-${mode}`}
+            key={`${state.today?.date}-${state.today?.rerollsLeft}-${mode}-${count}-${state.includeColdDishes}`}
             recipes={todayRecipes}
             alreadyRevealed={revealed}
             onComplete={markRevealed}
@@ -107,13 +107,8 @@ export function Home({ game }: Props) {
           </div>
         </div>
       )}
-      {unlockMsg && <p className={styles.unlockToast}>{unlockMsg}</p>}
 
-      <RecipeDrawer
-        recipe={selected}
-        unlocked={selected ? isRecipeUnlocked(selected) : true}
-        onClose={() => setSelected(null)}
-      />
+      <RecipeDrawer recipe={selected} onClose={() => setSelected(null)} />
     </div>
   )
 }

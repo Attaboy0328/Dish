@@ -35,7 +35,7 @@ export function Settings({ game }: Props) {
       <section className={styles.block}>
         <div className={styles.blockCopy}>
           <h3>重置进度</h3>
-          <p>清除打卡、已解锁菜谱与今日菜单。此操作无法撤销。</p>
+          <p>清除打卡、偏好与今日菜单。此操作无法撤销。</p>
         </div>
         {!confirmReset ? (
           <button type="button" className={styles.danger} onClick={() => setConfirmReset(true)}>
@@ -62,7 +62,7 @@ export function Settings({ game }: Props) {
 
       <footer className={styles.note}>
         <strong>开饭盒子</strong>
-        <span>版本 1.1 · 每天三道，够吃不纠结</span>
+        <span>版本 1.2 · 几道随你选，够吃不纠结</span>
       </footer>
     </div>
   )

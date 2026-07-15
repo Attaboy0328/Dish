@@ -5,9 +5,7 @@
     "category": "荤菜",
     "protein": "猪肉",
     "timeMinutes": 15,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
+    "difficulty": 1,
     "tags": [
       "下饭",
       "有肉",
@@ -37,13 +35,11 @@
     "protein": "猪肉",
     "timeMinutes": 16,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "排骨",
@@ -68,8 +64,6 @@
     "protein": "猪肉",
     "timeMinutes": 17,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -99,8 +93,6 @@
     "protein": "猪肉",
     "timeMinutes": 18,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -130,12 +122,11 @@
     "protein": "猪肉",
     "timeMinutes": 19,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "鱼",
@@ -160,8 +151,6 @@
     "protein": "猪肉",
     "timeMinutes": 20,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -190,8 +179,6 @@
     "protein": "猪肉",
     "timeMinutes": 21,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -221,8 +208,6 @@
     "protein": "猪肉",
     "timeMinutes": 22,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
     "tags": [
       "下饭",
       "有肉",
@@ -252,8 +237,6 @@
     "protein": "猪肉",
     "timeMinutes": 23,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -283,13 +266,11 @@
     "protein": "猪肉",
     "timeMinutes": 24,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -314,8 +295,6 @@
     "protein": "猪肉",
     "timeMinutes": 25,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -345,12 +324,11 @@
     "protein": "猪肉",
     "timeMinutes": 26,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "猪肉",
@@ -375,8 +353,6 @@
     "protein": "猪肉",
     "timeMinutes": 27,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -405,9 +381,7 @@
     "category": "荤菜",
     "protein": "猪肉",
     "timeMinutes": 28,
-    "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
+    "difficulty": 2,
     "tags": [
       "下饭",
       "有肉",
@@ -436,9 +410,7 @@
     "category": "荤菜",
     "protein": "猪肉",
     "timeMinutes": 29,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 14,
+    "difficulty": 3,
     "tags": [
       "下饭",
       "有肉",
@@ -468,12 +440,11 @@
     "protein": "猪肉",
     "timeMinutes": 30,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -498,13 +469,10 @@
     "protein": "猪肉",
     "timeMinutes": 31,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -529,8 +497,6 @@
     "protein": "猪肉",
     "timeMinutes": 32,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -560,13 +526,11 @@
     "protein": "猪肉",
     "timeMinutes": 33,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -591,12 +555,11 @@
     "protein": "猪肉",
     "timeMinutes": 34,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "猪肉",
@@ -621,13 +584,10 @@
     "protein": "猪肉",
     "timeMinutes": 35,
     "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "排骨",
@@ -652,14 +612,11 @@
     "category": "荤菜",
     "protein": "猪肉",
     "timeMinutes": 36,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
+    "difficulty": 1,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "排骨",
@@ -684,12 +641,11 @@
     "protein": "猪肉",
     "timeMinutes": 37,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "排骨",
@@ -714,8 +670,6 @@
     "protein": "猪肉",
     "timeMinutes": 38,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -744,8 +698,6 @@
     "protein": "猪肉",
     "timeMinutes": 39,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -774,13 +726,11 @@
     "protein": "猪肉",
     "timeMinutes": 15,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -806,8 +756,6 @@
     "protein": "猪肉",
     "timeMinutes": 16,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -836,14 +784,11 @@
     "category": "荤菜",
     "protein": "牛肉",
     "timeMinutes": 17,
-    "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
+    "difficulty": 1,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -868,13 +813,11 @@
     "protein": "牛肉",
     "timeMinutes": 18,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "牛肉",
@@ -899,13 +842,10 @@
     "protein": "牛肉",
     "timeMinutes": 19,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -931,12 +871,11 @@
     "protein": "牛肉",
     "timeMinutes": 20,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "牛肉",
@@ -962,8 +901,6 @@
     "protein": "牛肉",
     "timeMinutes": 21,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -992,12 +929,11 @@
     "protein": "牛肉",
     "timeMinutes": 22,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "牛肉",
@@ -1022,13 +958,10 @@
     "protein": "牛肉",
     "timeMinutes": 23,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -1052,9 +985,7 @@
     "category": "荤菜",
     "protein": "牛肉",
     "timeMinutes": 24,
-    "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
+    "difficulty": 2,
     "tags": [
       "下饭",
       "有肉",
@@ -1083,13 +1014,12 @@
     "category": "荤菜",
     "protein": "牛肉",
     "timeMinutes": 25,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 14,
+    "difficulty": 3,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "牛肉",
@@ -1114,13 +1044,10 @@
     "protein": "牛肉",
     "timeMinutes": 26,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -1145,8 +1072,6 @@
     "protein": "牛肉",
     "timeMinutes": 27,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -1176,8 +1101,6 @@
     "protein": "牛肉",
     "timeMinutes": 28,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -1207,8 +1130,6 @@
     "protein": "牛肉",
     "timeMinutes": 29,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -1238,13 +1159,11 @@
     "protein": "牛肉",
     "timeMinutes": 30,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "牛肉",
@@ -1269,13 +1188,10 @@
     "protein": "牛肉",
     "timeMinutes": 31,
     "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -1299,14 +1215,11 @@
     "category": "荤菜",
     "protein": "羊肉",
     "timeMinutes": 32,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
+    "difficulty": 1,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "羊肉",
@@ -1330,8 +1243,6 @@
     "protein": "羊肉",
     "timeMinutes": 33,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -1360,13 +1271,11 @@
     "protein": "羊肉",
     "timeMinutes": 34,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "羊肉",
@@ -1390,12 +1299,11 @@
     "protein": "羊肉",
     "timeMinutes": 35,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "羊肉",
@@ -1419,8 +1327,6 @@
     "protein": "羊肉",
     "timeMinutes": 36,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -1448,13 +1354,10 @@
     "protein": "蛋豆",
     "timeMinutes": 37,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -1477,9 +1380,7 @@
     "category": "荤菜",
     "protein": "蛋豆",
     "timeMinutes": 38,
-    "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
+    "difficulty": 1,
     "tags": [
       "下饭",
       "素口",
@@ -1507,12 +1408,11 @@
     "protein": "蛋豆",
     "timeMinutes": 39,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -1535,8 +1435,6 @@
     "protein": "蛋豆",
     "timeMinutes": 15,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "素口",
@@ -1564,8 +1462,6 @@
     "protein": "海鲜",
     "timeMinutes": 16,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -1594,13 +1490,10 @@
     "protein": "蛋豆",
     "timeMinutes": 17,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -1623,13 +1516,11 @@
     "protein": "蛋豆",
     "timeMinutes": 18,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "素口",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -1652,12 +1543,11 @@
     "protein": "禽类",
     "timeMinutes": 19,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡肉",
@@ -1681,9 +1571,7 @@
     "category": "荤菜",
     "protein": "禽类",
     "timeMinutes": 20,
-    "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
+    "difficulty": 2,
     "tags": [
       "下饭",
       "有肉",
@@ -1713,13 +1601,10 @@
     "protein": "禽类",
     "timeMinutes": 21,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡肉",
@@ -1744,8 +1629,6 @@
     "protein": "禽类",
     "timeMinutes": 22,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -1774,13 +1657,11 @@
     "protein": "禽类",
     "timeMinutes": 23,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "鸡肉",
@@ -1805,13 +1686,10 @@
     "protein": "禽类",
     "timeMinutes": 24,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "鸡肉",
@@ -1836,12 +1714,11 @@
     "protein": "禽类",
     "timeMinutes": 25,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "鸡肉",
@@ -1866,13 +1743,11 @@
     "protein": "禽类",
     "timeMinutes": 26,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "鸡肉",
@@ -1897,8 +1772,6 @@
     "protein": "禽类",
     "timeMinutes": 27,
     "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
     "tags": [
       "下饭",
       "有肉",
@@ -1928,8 +1801,6 @@
     "protein": "禽类",
     "timeMinutes": 28,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -1959,13 +1830,10 @@
     "protein": "禽类",
     "timeMinutes": 29,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡肉",
@@ -1990,8 +1858,6 @@
     "protein": "禽类",
     "timeMinutes": 30,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2021,12 +1887,11 @@
     "protein": "禽类",
     "timeMinutes": 31,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡肉",
@@ -2051,13 +1916,10 @@
     "protein": "禽类",
     "timeMinutes": 32,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡肉",
@@ -2082,12 +1944,11 @@
     "protein": "禽类",
     "timeMinutes": 33,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡肉",
@@ -2111,9 +1972,7 @@
     "category": "荤菜",
     "protein": "禽类",
     "timeMinutes": 34,
-    "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
+    "difficulty": 1,
     "tags": [
       "下饭",
       "有肉",
@@ -2143,8 +2002,6 @@
     "protein": "禽类",
     "timeMinutes": 35,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2173,8 +2030,6 @@
     "protein": "禽类",
     "timeMinutes": 36,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2204,12 +2059,11 @@
     "protein": "海鲜",
     "timeMinutes": 37,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鱼",
@@ -2233,8 +2087,6 @@
     "protein": "海鲜",
     "timeMinutes": 38,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2263,13 +2115,10 @@
     "protein": "海鲜",
     "timeMinutes": 39,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "鱼",
@@ -2293,13 +2142,11 @@
     "protein": "海鲜",
     "timeMinutes": 15,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "虾",
@@ -2322,14 +2169,12 @@
     "category": "荤菜",
     "protein": "海鲜",
     "timeMinutes": 16,
-    "difficulty": 3,
-    "rarity": "legendary",
-    "unlockAtStreak": 30,
+    "difficulty": 2,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "虾",
@@ -2353,8 +2198,6 @@
     "protein": "海鲜",
     "timeMinutes": 17,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2383,12 +2226,11 @@
     "protein": "海鲜",
     "timeMinutes": 18,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "虾",
@@ -2412,8 +2254,6 @@
     "protein": "海鲜",
     "timeMinutes": 19,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2442,8 +2282,6 @@
     "protein": "海鲜",
     "timeMinutes": 20,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2471,8 +2309,6 @@
     "protein": "海鲜",
     "timeMinutes": 21,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2501,12 +2337,11 @@
     "protein": "海鲜",
     "timeMinutes": 22,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鱼",
@@ -2529,13 +2364,12 @@
     "category": "荤菜",
     "protein": "猪肉",
     "timeMinutes": 23,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
+    "difficulty": 3,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "猪肉",
@@ -2560,13 +2394,10 @@
     "protein": "猪肉",
     "timeMinutes": 24,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -2591,13 +2422,10 @@
     "protein": "猪肉",
     "timeMinutes": 25,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -2622,12 +2450,11 @@
     "protein": "猪肉",
     "timeMinutes": 26,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -2652,12 +2479,11 @@
     "protein": "猪肉",
     "timeMinutes": 27,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -2682,8 +2508,6 @@
     "protein": "猪肉",
     "timeMinutes": 28,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2714,8 +2538,6 @@
     "protein": "猪肉",
     "timeMinutes": 29,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -2743,14 +2565,11 @@
     "category": "荤菜",
     "protein": "猪肉",
     "timeMinutes": 30,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
+    "difficulty": 1,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -2775,13 +2594,10 @@
     "protein": "猪肉",
     "timeMinutes": 31,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -2806,13 +2622,10 @@
     "protein": "牛肉",
     "timeMinutes": 32,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -2837,13 +2650,10 @@
     "protein": "猪肉",
     "timeMinutes": 33,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -2868,13 +2678,10 @@
     "protein": "猪肉",
     "timeMinutes": 34,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -2899,13 +2706,10 @@
     "protein": "猪肉",
     "timeMinutes": 35,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -2930,12 +2734,11 @@
     "protein": "猪肉",
     "timeMinutes": 36,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -2960,13 +2763,10 @@
     "protein": "猪肉",
     "timeMinutes": 37,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鱼",
@@ -2991,8 +2791,6 @@
     "protein": "猪肉",
     "timeMinutes": 38,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3021,13 +2819,10 @@
     "protein": "猪肉",
     "timeMinutes": 39,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -3053,13 +2848,10 @@
     "protein": "猪肉",
     "timeMinutes": 15,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -3085,8 +2877,6 @@
     "protein": "猪肉",
     "timeMinutes": 16,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3115,8 +2905,6 @@
     "protein": "猪肉",
     "timeMinutes": 17,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3146,8 +2934,6 @@
     "protein": "猪肉",
     "timeMinutes": 18,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3176,14 +2962,11 @@
     "category": "荤菜",
     "protein": "猪肉",
     "timeMinutes": 19,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
+    "difficulty": 3,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -3208,8 +2991,6 @@
     "protein": "猪肉",
     "timeMinutes": 20,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3238,13 +3019,10 @@
     "protein": "猪肉",
     "timeMinutes": 21,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -3269,8 +3047,6 @@
     "protein": "猪肉",
     "timeMinutes": 22,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3300,13 +3076,11 @@
     "protein": "猪肉",
     "timeMinutes": 23,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -3331,13 +3105,10 @@
     "protein": "海鲜",
     "timeMinutes": 24,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "虾",
@@ -3361,13 +3132,10 @@
     "protein": "海鲜",
     "timeMinutes": 25,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "鱼",
@@ -3390,14 +3158,11 @@
     "category": "荤菜",
     "protein": "海鲜",
     "timeMinutes": 26,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
+    "difficulty": 1,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鱼",
@@ -3421,13 +3186,11 @@
     "protein": "海鲜",
     "timeMinutes": 27,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "鱼",
@@ -3451,13 +3214,10 @@
     "protein": "海鲜",
     "timeMinutes": 28,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鱼",
@@ -3481,8 +3241,6 @@
     "protein": "海鲜",
     "timeMinutes": 29,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3511,8 +3269,6 @@
     "protein": "海鲜",
     "timeMinutes": 30,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3541,8 +3297,6 @@
     "protein": "海鲜",
     "timeMinutes": 31,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3570,8 +3324,6 @@
     "protein": "海鲜",
     "timeMinutes": 32,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3600,12 +3352,11 @@
     "protein": "海鲜",
     "timeMinutes": 33,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "鱼",
@@ -3630,13 +3381,10 @@
     "protein": "猪肉",
     "timeMinutes": 34,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "排骨",
@@ -3661,12 +3409,11 @@
     "protein": "禽类",
     "timeMinutes": 35,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡肉",
@@ -3691,12 +3438,11 @@
     "protein": "猪肉",
     "timeMinutes": 36,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "排骨",
@@ -3721,12 +3467,11 @@
     "protein": "猪肉",
     "timeMinutes": 37,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "排骨",
@@ -3751,13 +3496,11 @@
     "protein": "猪肉",
     "timeMinutes": 38,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -3782,8 +3525,6 @@
     "protein": "猪肉",
     "timeMinutes": 39,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3812,13 +3553,12 @@
     "category": "荤菜",
     "protein": "猪肉",
     "timeMinutes": 15,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
+    "difficulty": 3,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -3844,13 +3584,10 @@
     "protein": "猪肉",
     "timeMinutes": 16,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -3875,8 +3612,6 @@
     "protein": "猪肉",
     "timeMinutes": 17,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3906,12 +3641,11 @@
     "protein": "猪肉",
     "timeMinutes": 18,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -3936,8 +3670,6 @@
     "protein": "猪肉",
     "timeMinutes": 19,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
@@ -3967,13 +3699,10 @@
     "protein": "猪肉",
     "timeMinutes": 20,
     "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "下饭",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -3993,138 +3722,16 @@
   },
   {
     "id": "r132",
-    "name": "红烧肉·家庭版2",
-    "category": "荤菜",
-    "protein": "猪肉",
-    "timeMinutes": 21,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "下饭",
-      "有肉",
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "葱",
-      "姜",
-      "蒜",
-      "生抽",
-      "料酒"
-    ],
-    "steps": [
-      "备齐食材：红烧肉所需主料切好，葱姜蒜切末。",
-      "热锅下油，爆香葱姜蒜，下主料翻炒至变色。",
-      "加入配菜继续炒，倒入生抽等调味，适量清水或淀粉勾芡。",
-      "大火收汁，装盘即可开吃。"
-    ],
-    "emoji": "🥩"
-  },
-  {
-    "id": "r133",
-    "name": "糖醋排骨·家庭版2",
-    "category": "荤菜",
-    "protein": "猪肉",
-    "timeMinutes": 22,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
-    "tags": [
-      "下饭",
-      "有肉",
-      "家常"
-    ],
-    "ingredients": [
-      "排骨",
-      "葱",
-      "姜",
-      "蒜",
-      "生抽",
-      "料酒"
-    ],
-    "steps": [
-      "备齐食材：糖醋排骨所需主料切好，葱姜蒜切末。",
-      "热锅下油，爆香葱姜蒜，下主料翻炒至变色。",
-      "加入配菜继续炒，倒入生抽等调味，适量清水或淀粉勾芡。",
-      "大火收汁，装盘即可开吃。"
-    ],
-    "emoji": "🍖"
-  },
-  {
-    "id": "r134",
-    "name": "回锅肉·家庭版2",
-    "category": "荤菜",
-    "protein": "猪肉",
-    "timeMinutes": 23,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "下饭",
-      "有肉",
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "葱",
-      "姜",
-      "蒜",
-      "生抽",
-      "料酒"
-    ],
-    "steps": [
-      "备齐食材：回锅肉所需主料切好，葱姜蒜切末。",
-      "热锅下油，爆香葱姜蒜，下主料翻炒至变色。",
-      "加入配菜继续炒，倒入生抽等调味，适量清水或淀粉勾芡。",
-      "大火收汁，装盘即可开吃。"
-    ],
-    "emoji": "🥘"
-  },
-  {
-    "id": "r135",
-    "name": "青椒肉丝·家庭版2",
-    "category": "荤菜",
-    "protein": "猪肉",
-    "timeMinutes": 24,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "下饭",
-      "有肉",
-      "家常",
-      "一人食"
-    ],
-    "ingredients": [
-      "猪肉",
-      "葱",
-      "姜",
-      "蒜",
-      "生抽",
-      "料酒"
-    ],
-    "steps": [
-      "备齐食材：青椒肉丝所需主料切好，葱姜蒜切末。",
-      "热锅下油，爆香葱姜蒜，下主料翻炒至变色。",
-      "加入配菜继续炒，倒入生抽等调味，适量清水或淀粉勾芡。",
-      "大火收汁，装盘即可开吃。"
-    ],
-    "emoji": "🍽️"
-  },
-  {
-    "id": "r136",
     "name": "酸辣土豆丝",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 25,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 21,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -4142,14 +3749,12 @@
     "emoji": "🥔"
   },
   {
-    "id": "r137",
+    "id": "r133",
     "name": "虎皮青椒",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 26,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 22,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -4170,19 +3775,17 @@
     "emoji": "🍽️"
   },
   {
-    "id": "r138",
+    "id": "r134",
     "name": "干煸豆角",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 27,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 23,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "时蔬",
@@ -4199,18 +3802,17 @@
     "emoji": "🫘"
   },
   {
-    "id": "r139",
+    "id": "r135",
     "name": "地三鲜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 28,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 24,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -4227,19 +3829,17 @@
     "emoji": "🍆"
   },
   {
-    "id": "r140",
+    "id": "r136",
     "name": "鱼香茄子",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 29,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
+    "timeMinutes": 25,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "鱼",
@@ -4256,19 +3856,17 @@
     "emoji": "🍆"
   },
   {
-    "id": "r141",
+    "id": "r137",
     "name": "蒜蓉西兰花",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 30,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 26,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -4285,14 +3883,12 @@
     "emoji": "🥦"
   },
   {
-    "id": "r142",
+    "id": "r138",
     "name": "清炒时蔬",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 31,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 27,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -4313,19 +3909,16 @@
     "emoji": "🥬"
   },
   {
-    "id": "r143",
+    "id": "r139",
     "name": "蚝油生菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 32,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 28,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -4342,19 +3935,16 @@
     "emoji": "🥗"
   },
   {
-    "id": "r144",
+    "id": "r140",
     "name": "蒜蓉空心菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 33,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 29,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -4371,14 +3961,12 @@
     "emoji": "🌿"
   },
   {
-    "id": "r145",
+    "id": "r141",
     "name": "清炒小白菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 34,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 30,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -4400,14 +3988,12 @@
     "emoji": "🥬"
   },
   {
-    "id": "r146",
+    "id": "r142",
     "name": "上海青炒香干",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 35,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 31,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -4429,14 +4015,12 @@
     "emoji": "🟩"
   },
   {
-    "id": "r147",
+    "id": "r143",
     "name": "手撕包菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 36,
+    "timeMinutes": 32,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
     "tags": [
       "清爽",
       "素口",
@@ -4458,19 +4042,16 @@
     "emoji": "🥬"
   },
   {
-    "id": "r148",
+    "id": "r144",
     "name": "醋溜白菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 37,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 33,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -4487,18 +4068,17 @@
     "emoji": "🍋"
   },
   {
-    "id": "r149",
+    "id": "r145",
     "name": "西红柿炒豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 38,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 34,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -4517,14 +4097,12 @@
     "emoji": "🍅"
   },
   {
-    "id": "r150",
+    "id": "r146",
     "name": "家常豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 39,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 35,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -4546,14 +4124,12 @@
     "emoji": "🧈"
   },
   {
-    "id": "r151",
+    "id": "r147",
     "name": "锅塌豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 15,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 36,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -4575,14 +4151,12 @@
     "emoji": "🍳"
   },
   {
-    "id": "r152",
+    "id": "r148",
     "name": "红烧豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 16,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 37,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -4604,19 +4178,17 @@
     "emoji": "🟥"
   },
   {
-    "id": "r153",
+    "id": "r149",
     "name": "葱油豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 17,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 38,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -4634,14 +4206,12 @@
     "emoji": "🧅"
   },
   {
-    "id": "r154",
+    "id": "r150",
     "name": "香菇青菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 18,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
+    "timeMinutes": 39,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -4662,18 +4232,17 @@
     "emoji": "🍄"
   },
   {
-    "id": "r155",
+    "id": "r151",
     "name": "素炒油麦菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 19,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 15,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "时蔬",
@@ -4690,14 +4259,12 @@
     "emoji": "🥬"
   },
   {
-    "id": "r156",
+    "id": "r152",
     "name": "清炒芥蓝",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 20,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 16,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -4719,14 +4286,12 @@
     "emoji": "🟢"
   },
   {
-    "id": "r157",
+    "id": "r153",
     "name": "清炒菠菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 21,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 17,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -4748,19 +4313,16 @@
     "emoji": "🟢"
   },
   {
-    "id": "r158",
+    "id": "r154",
     "name": "木耳炒山药",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 22,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 18,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -4777,18 +4339,17 @@
     "emoji": "🤍"
   },
   {
-    "id": "r159",
+    "id": "r155",
     "name": "清炒莲藕片",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 23,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 19,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "时蔬",
@@ -4805,14 +4366,12 @@
     "emoji": "🌸"
   },
   {
-    "id": "r160",
+    "id": "r156",
     "name": "芹菜炒香干",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 24,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 20,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -4833,105 +4392,17 @@
     "emoji": "🥬"
   },
   {
-    "id": "r161",
-    "name": "凉拌黄瓜",
-    "category": "素菜",
-    "protein": "素",
-    "timeMinutes": 25,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
-    "tags": [
-      "清爽",
-      "素口",
-      "家常",
-      "快手"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油"
-    ],
-    "steps": [
-      "备齐食材：凉拌黄瓜所需主料切好，葱姜蒜切末。",
-      "热锅下油，爆香葱姜蒜，下主料翻炒至变色。",
-      "加入配菜继续炒，倒入生抽等调味，适量清水或淀粉勾芡。",
-      "大火收汁，装盘即可开吃。"
-    ],
-    "emoji": "🥒"
-  },
-  {
-    "id": "r162",
-    "name": "拍黄瓜",
-    "category": "素菜",
-    "protein": "素",
-    "timeMinutes": 26,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "清爽",
-      "素口",
-      "家常",
-      "快手"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油"
-    ],
-    "steps": [
-      "备齐食材：拍黄瓜所需主料切好，葱姜蒜切末。",
-      "热锅下油，爆香葱姜蒜，下主料翻炒至变色。",
-      "加入配菜继续炒，倒入生抽等调味，适量清水或淀粉勾芡。",
-      "大火收汁，装盘即可开吃。"
-    ],
-    "emoji": "🥒"
-  },
-  {
-    "id": "r163",
-    "name": "凉拌木耳",
-    "category": "素菜",
-    "protein": "素",
-    "timeMinutes": 27,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "清爽",
-      "素口",
-      "家常",
-      "快手"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油"
-    ],
-    "steps": [
-      "备齐食材：凉拌木耳所需主料切好，葱姜蒜切末。",
-      "热锅下油，爆香葱姜蒜，下主料翻炒至变色。",
-      "加入配菜继续炒，倒入生抽等调味，适量清水或淀粉勾芡。",
-      "大火收汁，装盘即可开吃。"
-    ],
-    "emoji": "🍄"
-  },
-  {
-    "id": "r164",
+    "id": "r157",
     "name": "蒜泥茄子",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 28,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 21,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -4948,14 +4419,12 @@
     "emoji": "🍆"
   },
   {
-    "id": "r165",
+    "id": "r158",
     "name": "红椒炒藕片",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 29,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 22,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -4976,19 +4445,16 @@
     "emoji": "🫑"
   },
   {
-    "id": "r166",
+    "id": "r159",
     "name": "清炒豆芽",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 30,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 23,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -5005,18 +4471,17 @@
     "emoji": "🌱"
   },
   {
-    "id": "r167",
+    "id": "r160",
     "name": "干锅花菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 31,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 24,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -5033,18 +4498,17 @@
     "emoji": "🥦"
   },
   {
-    "id": "r168",
+    "id": "r161",
     "name": "咖喱土豆",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 32,
+    "timeMinutes": 25,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -5062,14 +4526,12 @@
     "emoji": "🍛"
   },
   {
-    "id": "r169",
+    "id": "r162",
     "name": "西红柿炖豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 33,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 26,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -5093,14 +4555,12 @@
     "emoji": "🍅"
   },
   {
-    "id": "r170",
+    "id": "r163",
     "name": "金针菇炒青菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 34,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 27,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -5122,19 +4582,16 @@
     "emoji": "🍄"
   },
   {
-    "id": "r171",
+    "id": "r164",
     "name": "荷兰豆炒口蘑",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 35,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 28,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -5151,14 +4608,12 @@
     "emoji": "🫛"
   },
   {
-    "id": "r172",
+    "id": "r165",
     "name": "西葫芦炒蛋",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 36,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 29,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -5180,14 +4635,12 @@
     "emoji": "🥒"
   },
   {
-    "id": "r173",
+    "id": "r166",
     "name": "丝瓜炒蛋",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 37,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 30,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -5208,14 +4661,12 @@
     "emoji": "🥚"
   },
   {
-    "id": "r174",
+    "id": "r167",
     "name": "冬瓜炒木耳",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 38,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 31,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -5237,18 +4688,17 @@
     "emoji": "🧊"
   },
   {
-    "id": "r175",
+    "id": "r168",
     "name": "清炒笋丝",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 39,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
+    "timeMinutes": 32,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -5265,19 +4715,16 @@
     "emoji": "🎋"
   },
   {
-    "id": "r176",
+    "id": "r169",
     "name": "椒盐杏鲍菇",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 15,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 33,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -5294,14 +4741,12 @@
     "emoji": "🍄"
   },
   {
-    "id": "r177",
+    "id": "r170",
     "name": "红烧茄子",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 16,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 34,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -5323,19 +4768,16 @@
     "emoji": "🍆"
   },
   {
-    "id": "r178",
+    "id": "r171",
     "name": "麻婆茄子",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 17,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 35,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -5352,19 +4794,16 @@
     "emoji": "🍽️"
   },
   {
-    "id": "r179",
+    "id": "r172",
     "name": "尖椒土豆片",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 18,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 36,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -5382,14 +4821,12 @@
     "emoji": "🍽️"
   },
   {
-    "id": "r180",
+    "id": "r173",
     "name": "蒜苔炒香干",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 19,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 37,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -5411,18 +4848,17 @@
     "emoji": "🌱"
   },
   {
-    "id": "r181",
+    "id": "r174",
     "name": "素什锦",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 20,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 38,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -5439,14 +4875,12 @@
     "emoji": "🥗"
   },
   {
-    "id": "r182",
+    "id": "r175",
     "name": "炖白菜豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 21,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
+    "timeMinutes": 39,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -5468,14 +4902,12 @@
     "emoji": "🥬"
   },
   {
-    "id": "r183",
+    "id": "r176",
     "name": "炒合菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 22,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 15,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -5497,19 +4929,16 @@
     "emoji": "🥬"
   },
   {
-    "id": "r184",
+    "id": "r177",
     "name": "素炒三丝",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 23,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 16,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -5526,14 +4955,12 @@
     "emoji": "🧵"
   },
   {
-    "id": "r185",
+    "id": "r178",
     "name": "糖醋藕片",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 24,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 17,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -5555,18 +4982,17 @@
     "emoji": "🍬"
   },
   {
-    "id": "r186",
+    "id": "r179",
     "name": "酱烧茄子",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 25,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 18,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "时蔬",
@@ -5583,18 +5009,17 @@
     "emoji": "🍆"
   },
   {
-    "id": "r187",
+    "id": "r180",
     "name": "豉汁油麦菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 26,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 19,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -5611,18 +5036,17 @@
     "emoji": "🥬"
   },
   {
-    "id": "r188",
+    "id": "r181",
     "name": "蚝油杏鲍菇",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 27,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 20,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -5639,19 +5063,16 @@
     "emoji": "🍄"
   },
   {
-    "id": "r189",
+    "id": "r182",
     "name": "白灼菜心",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 28,
+    "timeMinutes": 21,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -5668,14 +5089,12 @@
     "emoji": "💚"
   },
   {
-    "id": "r190",
+    "id": "r183",
     "name": "蒜蓉娃娃菜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 29,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 22,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -5697,19 +5116,17 @@
     "emoji": "🥬"
   },
   {
-    "id": "r191",
+    "id": "r184",
     "name": "炒红薯叶",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 30,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 23,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "时蔬",
@@ -5726,14 +5143,12 @@
     "emoji": "🍠"
   },
   {
-    "id": "r192",
+    "id": "r185",
     "name": "清炒苦瓜",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 31,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 24,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -5755,19 +5170,16 @@
     "emoji": "🟢"
   },
   {
-    "id": "r193",
+    "id": "r186",
     "name": "苦瓜炒蛋",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 32,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 25,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -5784,14 +5196,12 @@
     "emoji": "🥚"
   },
   {
-    "id": "r194",
+    "id": "r187",
     "name": "西红柿炒金针菇",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 33,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 26,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -5814,19 +5224,17 @@
     "emoji": "🍅"
   },
   {
-    "id": "r195",
+    "id": "r188",
     "name": "洋葱炒土豆片",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 34,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 27,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -5844,14 +5252,12 @@
     "emoji": "🧅"
   },
   {
-    "id": "r196",
+    "id": "r189",
     "name": "洋葱炒木耳",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 35,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
+    "timeMinutes": 28,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -5873,14 +5279,12 @@
     "emoji": "🍄"
   },
   {
-    "id": "r197",
+    "id": "r190",
     "name": "清炒粉丝",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 36,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 29,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -5902,14 +5306,12 @@
     "emoji": "🍜"
   },
   {
-    "id": "r198",
+    "id": "r191",
     "name": "酸辣粉丝",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 37,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 30,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -5931,18 +5333,17 @@
     "emoji": "🍽️"
   },
   {
-    "id": "r199",
+    "id": "r192",
     "name": "家常炒面筋",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 38,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 31,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -5959,18 +5360,17 @@
     "emoji": "🥖"
   },
   {
-    "id": "r200",
+    "id": "r193",
     "name": "糖醋脆皮豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 39,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 32,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -5988,14 +5388,12 @@
     "emoji": "🍬"
   },
   {
-    "id": "r201",
+    "id": "r194",
     "name": "香煎豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 15,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 33,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
@@ -6018,18 +5416,17 @@
     "emoji": "🍳"
   },
   {
-    "id": "r202",
+    "id": "r195",
     "name": "铁板豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 16,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 34,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -6047,14 +5444,12 @@
     "emoji": "🔥"
   },
   {
-    "id": "r203",
+    "id": "r196",
     "name": "麻辣豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 17,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
+    "timeMinutes": 35,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -6076,19 +5471,16 @@
     "emoji": "🍽️"
   },
   {
-    "id": "r204",
+    "id": "r197",
     "name": "青椒土豆丝",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 18,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 36,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -6106,14 +5498,12 @@
     "emoji": "🫑"
   },
   {
-    "id": "r205",
+    "id": "r198",
     "name": "胡萝卜炒山药",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 19,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 37,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -6134,14 +5524,12 @@
     "emoji": "🥕"
   },
   {
-    "id": "r206",
+    "id": "r199",
     "name": "玉米炒豌豆",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 20,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 38,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -6163,18 +5551,17 @@
     "emoji": "🌽"
   },
   {
-    "id": "r207",
+    "id": "r200",
     "name": "清炒毛豆",
     "category": "素菜",
     "protein": "素",
-    "timeMinutes": 21,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 39,
+    "difficulty": 2,
     "tags": [
       "清爽",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -6191,14 +5578,12 @@
     "emoji": "🟢"
   },
   {
-    "id": "r208",
+    "id": "r201",
     "name": "卤水豆腐",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 22,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 15,
+    "difficulty": 3,
     "tags": [
       "清爽",
       "素口",
@@ -6221,14 +5606,12 @@
     "emoji": "🧂"
   },
   {
-    "id": "r209",
+    "id": "r202",
     "name": "素鸡炒芹菜",
     "category": "素菜",
     "protein": "蛋豆",
-    "timeMinutes": 23,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 16,
+    "difficulty": 1,
     "tags": [
       "清爽",
       "素口",
@@ -6249,44 +5632,12 @@
     "emoji": "🥬"
   },
   {
-    "id": "r210",
-    "name": "酸辣土豆丝·家庭版2",
-    "category": "素菜",
-    "protein": "素",
-    "timeMinutes": 24,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
-    "tags": [
-      "清爽",
-      "素口",
-      "家常",
-      "一人食"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油",
-      "土豆"
-    ],
-    "steps": [
-      "备齐食材：酸辣土豆丝所需主料切好，葱姜蒜切末。",
-      "热锅下油，爆香葱姜蒜，下主料翻炒至变色。",
-      "加入配菜继续炒，倒入生抽等调味，适量清水或淀粉勾芡。",
-      "大火收汁，装盘即可开吃。"
-    ],
-    "emoji": "🥔"
-  },
-  {
-    "id": "r211",
+    "id": "r203",
     "name": "番茄蛋汤",
     "category": "汤羹",
     "protein": "蛋豆",
-    "timeMinutes": 45,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 37,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "素口",
@@ -6310,19 +5661,16 @@
     "emoji": "🍲"
   },
   {
-    "id": "r212",
+    "id": "r204",
     "name": "紫菜蛋花汤",
     "category": "汤羹",
     "protein": "蛋豆",
-    "timeMinutes": 46,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 38,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -6340,18 +5688,17 @@
     "emoji": "🌊"
   },
   {
-    "id": "r213",
+    "id": "r205",
     "name": "冬瓜排骨汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 47,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 39,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "排骨",
@@ -6371,19 +5718,16 @@
     "emoji": "🦴"
   },
   {
-    "id": "r214",
+    "id": "r206",
     "name": "玉米排骨汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 48,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 40,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "排骨",
@@ -6403,18 +5747,17 @@
     "emoji": "🌽"
   },
   {
-    "id": "r215",
+    "id": "r207",
     "name": "萝卜排骨汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 49,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 41,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "排骨",
@@ -6434,19 +5777,17 @@
     "emoji": "🥕"
   },
   {
-    "id": "r216",
+    "id": "r208",
     "name": "海带排骨汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 50,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 42,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "有肉",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "排骨",
@@ -6466,19 +5807,17 @@
     "emoji": "🌊"
   },
   {
-    "id": "r217",
+    "id": "r209",
     "name": "冬瓜丸子汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 51,
+    "timeMinutes": 43,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
     "tags": [
       "暖胃",
       "有肉",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "猪肉",
@@ -6498,19 +5837,16 @@
     "emoji": "🍡"
   },
   {
-    "id": "r218",
+    "id": "r210",
     "name": "西湖牛肉羹",
     "category": "汤羹",
     "protein": "牛肉",
-    "timeMinutes": 52,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 44,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -6530,17 +5866,16 @@
     "emoji": "🥣"
   },
   {
-    "id": "r219",
+    "id": "r211",
     "name": "酸辣汤",
     "category": "汤羹",
     "protein": "其他",
-    "timeMinutes": 53,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 45,
+    "difficulty": 1,
     "tags": [
       "暖胃",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "主料",
@@ -6558,18 +5893,17 @@
     "emoji": "🍽️"
   },
   {
-    "id": "r220",
+    "id": "r212",
     "name": "豆腐海鲜汤",
     "category": "汤羹",
     "protein": "海鲜",
-    "timeMinutes": 54,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 46,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "海鲜主料",
@@ -6589,14 +5923,12 @@
     "emoji": "🧈"
   },
   {
-    "id": "r221",
+    "id": "r213",
     "name": "丝瓜蛋汤",
     "category": "汤羹",
     "protein": "蛋豆",
-    "timeMinutes": 35,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 47,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "素口",
@@ -6619,19 +5951,16 @@
     "emoji": "🥒"
   },
   {
-    "id": "r222",
+    "id": "r214",
     "name": "菠菜蛋汤",
     "category": "汤羹",
     "protein": "蛋豆",
-    "timeMinutes": 36,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 48,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -6649,19 +5978,17 @@
     "emoji": "🟢"
   },
   {
-    "id": "r223",
+    "id": "r215",
     "name": "菌菇汤",
     "category": "汤羹",
     "protein": "素",
-    "timeMinutes": 37,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 49,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "素口",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "时蔬",
@@ -6679,19 +6006,16 @@
     "emoji": "🍄"
   },
   {
-    "id": "r224",
+    "id": "r216",
     "name": "番茄牛腩汤",
     "category": "汤羹",
     "protein": "牛肉",
-    "timeMinutes": 38,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
+    "timeMinutes": 50,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -6711,14 +6035,12 @@
     "emoji": "🍅"
   },
   {
-    "id": "r225",
+    "id": "r217",
     "name": "鲫鱼豆腐汤",
     "category": "汤羹",
     "protein": "海鲜",
-    "timeMinutes": 39,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 51,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "有肉",
@@ -6743,19 +6065,17 @@
     "emoji": "🐟"
   },
   {
-    "id": "r226",
+    "id": "r218",
     "name": "蛤蜊汤",
     "category": "汤羹",
     "protein": "海鲜",
-    "timeMinutes": 40,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 52,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "有肉",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "海鲜主料",
@@ -6774,19 +6094,16 @@
     "emoji": "🐚"
   },
   {
-    "id": "r227",
+    "id": "r219",
     "name": "黄瓜蛋花汤",
     "category": "汤羹",
     "protein": "蛋豆",
-    "timeMinutes": 41,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 53,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -6804,18 +6121,17 @@
     "emoji": "🥒"
   },
   {
-    "id": "r228",
+    "id": "r220",
     "name": "白菜豆腐汤",
     "category": "汤羹",
     "protein": "蛋豆",
-    "timeMinutes": 42,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 54,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -6834,14 +6150,12 @@
     "emoji": "🥬"
   },
   {
-    "id": "r229",
+    "id": "r221",
     "name": "萝卜丝汤",
     "category": "汤羹",
     "protein": "素",
-    "timeMinutes": 43,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 35,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "素口",
@@ -6864,14 +6178,12 @@
     "emoji": "🥕"
   },
   {
-    "id": "r230",
+    "id": "r222",
     "name": "山药排骨汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 44,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 36,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "有肉",
@@ -6895,19 +6207,16 @@
     "emoji": "🤍"
   },
   {
-    "id": "r231",
+    "id": "r223",
     "name": "莲藕排骨汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 45,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
+    "timeMinutes": 37,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "排骨",
@@ -6927,18 +6236,17 @@
     "emoji": "🌸"
   },
   {
-    "id": "r232",
+    "id": "r224",
     "name": "胡椒猪肚汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 46,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 38,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "猪肉",
@@ -6958,14 +6266,12 @@
     "emoji": "🖤"
   },
   {
-    "id": "r233",
+    "id": "r225",
     "name": "玉米胡萝卜骨头汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 47,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 39,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "有肉",
@@ -6990,14 +6296,12 @@
     "emoji": "🦴"
   },
   {
-    "id": "r234",
+    "id": "r226",
     "name": "银耳莲子羹",
     "category": "汤羹",
     "protein": "素",
-    "timeMinutes": 48,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 40,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "素口",
@@ -7020,19 +6324,17 @@
     "emoji": "⚪"
   },
   {
-    "id": "r235",
+    "id": "r227",
     "name": "绿豆汤",
     "category": "汤羹",
     "protein": "素",
-    "timeMinutes": 49,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 41,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "素口",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -7050,14 +6352,12 @@
     "emoji": "🟢"
   },
   {
-    "id": "r236",
+    "id": "r228",
     "name": "红枣银耳汤",
     "category": "汤羹",
     "protein": "素",
-    "timeMinutes": 50,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 42,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "素口",
@@ -7080,19 +6380,16 @@
     "emoji": "🔴"
   },
   {
-    "id": "r237",
+    "id": "r229",
     "name": "虾皮冬瓜汤",
     "category": "汤羹",
     "protein": "海鲜",
-    "timeMinutes": 51,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 43,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "虾",
@@ -7111,14 +6408,12 @@
     "emoji": "🦐"
   },
   {
-    "id": "r238",
+    "id": "r230",
     "name": "豆腐皮蛋汤",
     "category": "汤羹",
     "protein": "蛋豆",
-    "timeMinutes": 52,
+    "timeMinutes": 44,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
     "tags": [
       "暖胃",
       "素口",
@@ -7141,14 +6436,12 @@
     "emoji": "🥚"
   },
   {
-    "id": "r239",
+    "id": "r231",
     "name": "番茄鱼丸汤",
     "category": "汤羹",
     "protein": "海鲜",
-    "timeMinutes": 53,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 45,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "有肉",
@@ -7173,14 +6466,12 @@
     "emoji": "🍅"
   },
   {
-    "id": "r240",
+    "id": "r232",
     "name": "当归鸡汤",
     "category": "汤羹",
     "protein": "禽类",
-    "timeMinutes": 54,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 46,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "有肉",
@@ -7205,14 +6496,12 @@
     "emoji": "🐔"
   },
   {
-    "id": "r241",
+    "id": "r233",
     "name": "黄芪炖鸡汤",
     "category": "汤羹",
     "protein": "禽类",
-    "timeMinutes": 35,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 47,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "有肉",
@@ -7236,19 +6525,17 @@
     "emoji": "🍵"
   },
   {
-    "id": "r242",
+    "id": "r234",
     "name": "老鸭汤",
     "category": "汤羹",
     "protein": "禽类",
-    "timeMinutes": 36,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 48,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "有肉",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "鸡肉",
@@ -7268,19 +6555,16 @@
     "emoji": "🦆"
   },
   {
-    "id": "r243",
+    "id": "r235",
     "name": "芋头排骨汤",
     "category": "汤羹",
     "protein": "猪肉",
-    "timeMinutes": 37,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 49,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "排骨",
@@ -7300,14 +6584,12 @@
     "emoji": "🥔"
   },
   {
-    "id": "r244",
+    "id": "r236",
     "name": "南瓜羹",
     "category": "汤羹",
     "protein": "素",
-    "timeMinutes": 38,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 50,
+    "difficulty": 2,
     "tags": [
       "暖胃",
       "素口",
@@ -7330,14 +6612,12 @@
     "emoji": "🎃"
   },
   {
-    "id": "r245",
+    "id": "r237",
     "name": "玉米羹",
     "category": "汤羹",
     "protein": "素",
-    "timeMinutes": 39,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
+    "timeMinutes": 51,
+    "difficulty": 3,
     "tags": [
       "暖胃",
       "素口",
@@ -7359,18 +6639,17 @@
     "emoji": "🌽"
   },
   {
-    "id": "r246",
+    "id": "r238",
     "name": "味噌风味豆腐汤",
     "category": "汤羹",
     "protein": "蛋豆",
-    "timeMinutes": 40,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 52,
+    "difficulty": 1,
     "tags": [
       "暖胃",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -7389,18 +6668,17 @@
     "emoji": "🍲"
   },
   {
-    "id": "r247",
+    "id": "r239",
     "name": "蛋炒饭",
     "category": "主食",
     "protein": "蛋豆",
-    "timeMinutes": 26,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 33,
+    "difficulty": 2,
     "tags": [
       "顶饱",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -7418,19 +6696,16 @@
     "emoji": "🍚"
   },
   {
-    "id": "r248",
+    "id": "r240",
     "name": "西红柿鸡蛋盖饭",
     "category": "主食",
     "protein": "蛋豆",
-    "timeMinutes": 27,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 34,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "素口",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -7449,17 +6724,16 @@
     "emoji": "🍅"
   },
   {
-    "id": "r249",
+    "id": "r241",
     "name": "扬州炒饭",
     "category": "主食",
     "protein": "其他",
-    "timeMinutes": 28,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 20,
+    "difficulty": 1,
     "tags": [
       "顶饱",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "主料",
@@ -7477,14 +6751,12 @@
     "emoji": "🍚"
   },
   {
-    "id": "r250",
+    "id": "r242",
     "name": "酱油炒饭",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 29,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 21,
+    "difficulty": 2,
     "tags": [
       "顶饱",
       "素口",
@@ -7507,14 +6779,12 @@
     "emoji": "🤎"
   },
   {
-    "id": "r251",
+    "id": "r243",
     "name": "葱油拌面",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 30,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 22,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "素口",
@@ -7537,19 +6807,16 @@
     "emoji": "🧅"
   },
   {
-    "id": "r252",
+    "id": "r244",
     "name": "炸酱面",
     "category": "主食",
     "protein": "猪肉",
-    "timeMinutes": 31,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
+    "timeMinutes": 23,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -7569,14 +6836,12 @@
     "emoji": "🍜"
   },
   {
-    "id": "r253",
+    "id": "r245",
     "name": "番茄肉酱意面家常版",
     "category": "主食",
     "protein": "猪肉",
-    "timeMinutes": 32,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 24,
+    "difficulty": 2,
     "tags": [
       "顶饱",
       "有肉",
@@ -7600,14 +6865,12 @@
     "emoji": "🍝"
   },
   {
-    "id": "r254",
+    "id": "r246",
     "name": "阳春面",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 33,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 25,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "素口",
@@ -7630,19 +6893,16 @@
     "emoji": "🍜"
   },
   {
-    "id": "r255",
+    "id": "r247",
     "name": "鸡蛋面",
     "category": "主食",
     "protein": "蛋豆",
-    "timeMinutes": 34,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 26,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -7660,14 +6920,65 @@
     "emoji": "🍜"
   },
   {
-    "id": "r256",
+    "id": "r248",
     "name": "酸辣粉",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 20,
+    "timeMinutes": 27,
+    "difficulty": 2,
+    "tags": [
+      "顶饱",
+      "素口",
+      "家常"
+    ],
+    "ingredients": [
+      "时蔬",
+      "蒜",
+      "盐",
+      "食用油"
+    ],
+    "steps": [
+      "准备主食与配料，米饭/面条提前备好。",
+      "热锅少油，先炒配料至断生。",
+      "下入主食翻炒均匀，调味（盐、生抽）。",
+      "大火收汁，起锅装盘。"
+    ],
+    "emoji": "🍽️"
+  },
+  {
+    "id": "r249",
+    "name": "热干面家常版",
+    "category": "主食",
+    "protein": "素",
+    "timeMinutes": 28,
+    "difficulty": 3,
+    "tags": [
+      "顶饱",
+      "素口",
+      "家常"
+    ],
+    "ingredients": [
+      "时蔬",
+      "蒜",
+      "盐",
+      "食用油",
+      "面条"
+    ],
+    "steps": [
+      "准备主食与配料，米饭/面条提前备好。",
+      "热锅少油，先炒配料至断生。",
+      "下入主食翻炒均匀，调味（盐、生抽）。",
+      "大火收汁，起锅装盘。"
+    ],
+    "emoji": "🍜"
+  },
+  {
+    "id": "r250",
+    "name": "葱油饼",
+    "category": "主食",
+    "protein": "素",
+    "timeMinutes": 29,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "顶饱",
       "素口",
@@ -7686,75 +6997,15 @@
       "下入主食翻炒均匀，调味（盐、生抽）。",
       "大火收汁，起锅装盘。"
     ],
-    "emoji": "🍽️"
-  },
-  {
-    "id": "r257",
-    "name": "热干面家常版",
-    "category": "主食",
-    "protein": "素",
-    "timeMinutes": 21,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "顶饱",
-      "素口",
-      "家常",
-      "一人食"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油",
-      "面条"
-    ],
-    "steps": [
-      "准备主食与配料，米饭/面条提前备好。",
-      "热锅少油，先炒配料至断生。",
-      "下入主食翻炒均匀，调味（盐、生抽）。",
-      "大火收汁，起锅装盘。"
-    ],
-    "emoji": "🍜"
-  },
-  {
-    "id": "r258",
-    "name": "葱油饼",
-    "category": "主食",
-    "protein": "素",
-    "timeMinutes": 22,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "顶饱",
-      "素口",
-      "家常"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油"
-    ],
-    "steps": [
-      "准备主食与配料，米饭/面条提前备好。",
-      "热锅少油，先炒配料至断生。",
-      "下入主食翻炒均匀，调味（盐、生抽）。",
-      "大火收汁，起锅装盘。"
-    ],
     "emoji": "🧅"
   },
   {
-    "id": "r259",
+    "id": "r251",
     "name": "手抓饼配菜卷",
     "category": "主食",
     "protein": "其他",
-    "timeMinutes": 23,
+    "timeMinutes": 30,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
     "tags": [
       "顶饱",
       "家常"
@@ -7774,103 +7025,12 @@
     "emoji": "🥞"
   },
   {
-    "id": "r260",
+    "id": "r252",
     "name": "饺子（白菜猪肉）",
     "category": "主食",
     "protein": "猪肉",
-    "timeMinutes": 24,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "顶饱",
-      "有肉",
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "葱",
-      "姜",
-      "蒜",
-      "生抽",
-      "料酒"
-    ],
-    "steps": [
-      "准备主食与配料，米饭/面条提前备好。",
-      "热锅少油，先炒配料至断生。",
-      "下入主食翻炒均匀，调味（盐、生抽）。",
-      "大火收汁，起锅装盘。"
-    ],
-    "emoji": "🥟"
-  },
-  {
-    "id": "r261",
-    "name": "韭菜鸡蛋饺子",
-    "category": "主食",
-    "protein": "蛋豆",
-    "timeMinutes": 25,
+    "timeMinutes": 31,
     "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "顶饱",
-      "素口",
-      "家常",
-      "一人食"
-    ],
-    "ingredients": [
-      "鸡蛋或豆腐",
-      "葱",
-      "盐",
-      "食用油"
-    ],
-    "steps": [
-      "准备主食与配料，米饭/面条提前备好。",
-      "热锅少油，先炒配料至断生。",
-      "下入主食翻炒均匀，调味（盐、生抽）。",
-      "大火收汁，起锅装盘。"
-    ],
-    "emoji": "🥟"
-  },
-  {
-    "id": "r262",
-    "name": "锅贴",
-    "category": "主食",
-    "protein": "猪肉",
-    "timeMinutes": 26,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "顶饱",
-      "有肉",
-      "家常"
-    ],
-    "ingredients": [
-      "猪肉",
-      "葱",
-      "姜",
-      "蒜",
-      "生抽",
-      "料酒"
-    ],
-    "steps": [
-      "准备主食与配料，米饭/面条提前备好。",
-      "热锅少油，先炒配料至断生。",
-      "下入主食翻炒均匀，调味（盐、生抽）。",
-      "大火收汁，起锅装盘。"
-    ],
-    "emoji": "🥟"
-  },
-  {
-    "id": "r263",
-    "name": "小笼汤包",
-    "category": "主食",
-    "protein": "猪肉",
-    "timeMinutes": 27,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
     "tags": [
       "顶饱",
       "有肉",
@@ -7894,14 +7054,12 @@
     "emoji": "🥟"
   },
   {
-    "id": "r264",
-    "name": "葱花卷",
+    "id": "r253",
+    "name": "韭菜鸡蛋饺子",
     "category": "主食",
-    "protein": "素",
-    "timeMinutes": 28,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "protein": "蛋豆",
+    "timeMinutes": 32,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "素口",
@@ -7909,8 +7067,8 @@
       "一人食"
     ],
     "ingredients": [
-      "时蔬",
-      "蒜",
+      "鸡蛋或豆腐",
+      "葱",
       "盐",
       "食用油"
     ],
@@ -7920,17 +7078,44 @@
       "下入主食翻炒均匀，调味（盐、生抽）。",
       "大火收汁，起锅装盘。"
     ],
-    "emoji": "🍞"
+    "emoji": "🥟"
   },
   {
-    "id": "r265",
-    "name": "馒头夹酱肉",
+    "id": "r254",
+    "name": "锅贴",
     "category": "主食",
     "protein": "猪肉",
-    "timeMinutes": 29,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 33,
+    "difficulty": 2,
+    "tags": [
+      "顶饱",
+      "有肉",
+      "家常",
+      "快手"
+    ],
+    "ingredients": [
+      "猪肉",
+      "葱",
+      "姜",
+      "蒜",
+      "生抽",
+      "料酒"
+    ],
+    "steps": [
+      "准备主食与配料，米饭/面条提前备好。",
+      "热锅少油，先炒配料至断生。",
+      "下入主食翻炒均匀，调味（盐、生抽）。",
+      "大火收汁，起锅装盘。"
+    ],
+    "emoji": "🥟"
+  },
+  {
+    "id": "r255",
+    "name": "小笼汤包",
+    "category": "主食",
+    "protein": "猪肉",
+    "timeMinutes": 34,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "有肉",
@@ -7950,22 +7135,75 @@
       "下入主食翻炒均匀，调味（盐、生抽）。",
       "大火收汁，起锅装盘。"
     ],
-    "emoji": "🥖"
+    "emoji": "🥟"
   },
   {
-    "id": "r266",
-    "name": "烙饼卷鸡蛋",
+    "id": "r256",
+    "name": "葱花卷",
     "category": "主食",
-    "protein": "蛋豆",
-    "timeMinutes": 30,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
+    "protein": "素",
+    "timeMinutes": 20,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "素口",
       "家常",
-      "一人食"
+      "快手"
+    ],
+    "ingredients": [
+      "时蔬",
+      "蒜",
+      "盐",
+      "食用油"
+    ],
+    "steps": [
+      "准备主食与配料，米饭/面条提前备好。",
+      "热锅少油，先炒配料至断生。",
+      "下入主食翻炒均匀，调味（盐、生抽）。",
+      "大火收汁，起锅装盘。"
+    ],
+    "emoji": "🍞"
+  },
+  {
+    "id": "r257",
+    "name": "馒头夹酱肉",
+    "category": "主食",
+    "protein": "猪肉",
+    "timeMinutes": 21,
+    "difficulty": 2,
+    "tags": [
+      "顶饱",
+      "有肉",
+      "家常",
+      "快手"
+    ],
+    "ingredients": [
+      "猪肉",
+      "葱",
+      "姜",
+      "蒜",
+      "生抽",
+      "料酒"
+    ],
+    "steps": [
+      "准备主食与配料，米饭/面条提前备好。",
+      "热锅少油，先炒配料至断生。",
+      "下入主食翻炒均匀，调味（盐、生抽）。",
+      "大火收汁，起锅装盘。"
+    ],
+    "emoji": "🥖"
+  },
+  {
+    "id": "r258",
+    "name": "烙饼卷鸡蛋",
+    "category": "主食",
+    "protein": "蛋豆",
+    "timeMinutes": 22,
+    "difficulty": 3,
+    "tags": [
+      "顶饱",
+      "素口",
+      "家常"
     ],
     "ingredients": [
       "鸡蛋或豆腐",
@@ -7982,14 +7220,12 @@
     "emoji": "🥞"
   },
   {
-    "id": "r267",
+    "id": "r259",
     "name": "南瓜粥",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 31,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 23,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "素口",
@@ -8010,19 +7246,17 @@
     "emoji": "🎃"
   },
   {
-    "id": "r268",
+    "id": "r260",
     "name": "小米粥",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 32,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 24,
+    "difficulty": 2,
     "tags": [
       "顶饱",
       "素口",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -8039,14 +7273,12 @@
     "emoji": "💛"
   },
   {
-    "id": "r269",
+    "id": "r261",
     "name": "皮蛋瘦肉粥",
     "category": "主食",
     "protein": "猪肉",
-    "timeMinutes": 33,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 25,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "有肉",
@@ -8069,19 +7301,16 @@
     "emoji": "🥣"
   },
   {
-    "id": "r270",
+    "id": "r262",
     "name": "八宝粥",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 34,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 26,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -8098,14 +7327,12 @@
     "emoji": "🥣"
   },
   {
-    "id": "r271",
+    "id": "r263",
     "name": "白粥配咸菜",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 20,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 27,
+    "difficulty": 2,
     "tags": [
       "顶饱",
       "素口",
@@ -8127,19 +7354,16 @@
     "emoji": "🍚"
   },
   {
-    "id": "r272",
+    "id": "r264",
     "name": "红薯粥",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 21,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 28,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -8156,19 +7380,16 @@
     "emoji": "🍠"
   },
   {
-    "id": "r273",
+    "id": "r265",
     "name": "玉米碴粥",
     "category": "主食",
     "protein": "素",
-    "timeMinutes": 22,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
+    "timeMinutes": 29,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",
@@ -8185,18 +7406,16 @@
     "emoji": "🌽"
   },
   {
-    "id": "r274",
+    "id": "r266",
     "name": "炒河粉",
     "category": "主食",
     "protein": "其他",
-    "timeMinutes": 23,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 30,
+    "difficulty": 2,
     "tags": [
       "顶饱",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "主料",
@@ -8213,19 +7432,16 @@
     "emoji": "🍜"
   },
   {
-    "id": "r275",
+    "id": "r267",
     "name": "干炒牛河",
     "category": "主食",
     "protein": "牛肉",
-    "timeMinutes": 24,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 31,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "有肉",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "牛肉",
@@ -8244,14 +7460,12 @@
     "emoji": "🐂"
   },
   {
-    "id": "r276",
+    "id": "r268",
     "name": "海鲜炒面",
     "category": "主食",
     "protein": "海鲜",
-    "timeMinutes": 25,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 32,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "有肉",
@@ -8275,19 +7489,16 @@
     "emoji": "🍤"
   },
   {
-    "id": "r277",
+    "id": "r269",
     "name": "肉丝炒面",
     "category": "主食",
     "protein": "猪肉",
-    "timeMinutes": 26,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 33,
+    "difficulty": 2,
     "tags": [
       "顶饱",
       "有肉",
-      "家常",
-      "一人食"
+      "家常"
     ],
     "ingredients": [
       "猪肉",
@@ -8307,14 +7518,12 @@
     "emoji": "🍜"
   },
   {
-    "id": "r278",
+    "id": "r270",
     "name": "杂酱米线",
     "category": "主食",
     "protein": "猪肉",
-    "timeMinutes": 27,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 34,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "有肉",
@@ -8338,14 +7547,12 @@
     "emoji": "🍜"
   },
   {
-    "id": "r279",
+    "id": "r271",
     "name": "番茄牛腩面",
     "category": "主食",
     "protein": "牛肉",
-    "timeMinutes": 28,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 20,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "有肉",
@@ -8370,18 +7577,17 @@
     "emoji": "🍜"
   },
   {
-    "id": "r280",
+    "id": "r272",
     "name": "鸡汤面",
     "category": "主食",
     "protein": "禽类",
-    "timeMinutes": 29,
+    "timeMinutes": 21,
     "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 0,
     "tags": [
       "顶饱",
       "有肉",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "鸡肉",
@@ -8401,14 +7607,12 @@
     "emoji": "🍜"
   },
   {
-    "id": "r281",
+    "id": "r273",
     "name": "海鲜粥",
     "category": "主食",
     "protein": "海鲜",
-    "timeMinutes": 30,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 22,
+    "difficulty": 3,
     "tags": [
       "顶饱",
       "有肉",
@@ -8431,19 +7635,17 @@
     "emoji": "🍲"
   },
   {
-    "id": "r282",
+    "id": "r274",
     "name": "菜肉包",
     "category": "主食",
     "protein": "猪肉",
-    "timeMinutes": 31,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 23,
+    "difficulty": 1,
     "tags": [
       "顶饱",
       "有肉",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "猪肉",
@@ -8462,14 +7664,12 @@
     "emoji": "🥟"
   },
   {
-    "id": "r283",
+    "id": "r275",
     "name": "凉拌黄瓜",
     "category": "凉菜",
     "protein": "素",
-    "timeMinutes": 12,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 14,
+    "difficulty": 2,
     "tags": [
       "开胃",
       "素口",
@@ -8489,18 +7689,17 @@
     "emoji": "🥒"
   },
   {
-    "id": "r284",
+    "id": "r276",
     "name": "凉拌海带丝",
     "category": "凉菜",
     "protein": "素",
-    "timeMinutes": 13,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 15,
+    "difficulty": 3,
     "tags": [
       "开胃",
       "素口",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -8516,18 +7715,17 @@
     "emoji": "🌊"
   },
   {
-    "id": "r285",
+    "id": "r277",
     "name": "凉拌西红柿",
     "category": "凉菜",
     "protein": "素",
-    "timeMinutes": 14,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 16,
+    "difficulty": 1,
     "tags": [
       "开胃",
       "素口",
-      "家常"
+      "家常",
+      "一人食"
     ],
     "ingredients": [
       "时蔬",
@@ -8544,14 +7742,87 @@
     "emoji": "🍅"
   },
   {
-    "id": "r286",
+    "id": "r278",
     "name": "凉拌藕片",
     "category": "凉菜",
     "protein": "素",
-    "timeMinutes": 15,
+    "timeMinutes": 17,
+    "difficulty": 2,
+    "tags": [
+      "开胃",
+      "素口",
+      "家常"
+    ],
+    "ingredients": [
+      "时蔬",
+      "蒜",
+      "盐",
+      "食用油"
+    ],
+    "steps": [
+      "主料洗净，按需要焯水或拍切。",
+      "调汁：蒜末、香醋、生抽、香油、少许糖与辣椒油。",
+      "浇汁拌匀，静置几分钟入味即可上桌。"
+    ],
+    "emoji": "🌸"
+  },
+  {
+    "id": "r279",
+    "name": "凉拌三丝",
+    "category": "凉菜",
+    "protein": "素",
+    "timeMinutes": 18,
+    "difficulty": 3,
+    "tags": [
+      "开胃",
+      "素口",
+      "家常"
+    ],
+    "ingredients": [
+      "时蔬",
+      "蒜",
+      "盐",
+      "食用油"
+    ],
+    "steps": [
+      "主料洗净，按需要焯水或拍切。",
+      "调汁：蒜末、香醋、生抽、香油、少许糖与辣椒油。",
+      "浇汁拌匀，静置几分钟入味即可上桌。"
+    ],
+    "emoji": "🧵"
+  },
+  {
+    "id": "r280",
+    "name": "凉拌金针菇",
+    "category": "凉菜",
+    "protein": "素",
+    "timeMinutes": 19,
     "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "tags": [
+      "开胃",
+      "素口",
+      "家常"
+    ],
+    "ingredients": [
+      "时蔬",
+      "蒜",
+      "盐",
+      "食用油"
+    ],
+    "steps": [
+      "主料洗净，按需要焯水或拍切。",
+      "调汁：蒜末、香醋、生抽、香油、少许糖与辣椒油。",
+      "浇汁拌匀，静置几分钟入味即可上桌。"
+    ],
+    "emoji": "🍄"
+  },
+  {
+    "id": "r281",
+    "name": "凉拌菠菜",
+    "category": "凉菜",
+    "protein": "素",
+    "timeMinutes": 10,
+    "difficulty": 2,
     "tags": [
       "开胃",
       "素口",
@@ -8569,106 +7840,20 @@
       "调汁：蒜末、香醋、生抽、香油、少许糖与辣椒油。",
       "浇汁拌匀，静置几分钟入味即可上桌。"
     ],
-    "emoji": "🌸"
-  },
-  {
-    "id": "r287",
-    "name": "凉拌三丝",
-    "category": "凉菜",
-    "protein": "素",
-    "timeMinutes": 16,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 3,
-    "tags": [
-      "开胃",
-      "素口",
-      "家常",
-      "快手"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油"
-    ],
-    "steps": [
-      "主料洗净，按需要焯水或拍切。",
-      "调汁：蒜末、香醋、生抽、香油、少许糖与辣椒油。",
-      "浇汁拌匀，静置几分钟入味即可上桌。"
-    ],
-    "emoji": "🧵"
-  },
-  {
-    "id": "r288",
-    "name": "凉拌金针菇",
-    "category": "凉菜",
-    "protein": "素",
-    "timeMinutes": 17,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "开胃",
-      "素口",
-      "家常",
-      "快手"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油"
-    ],
-    "steps": [
-      "主料洗净，按需要焯水或拍切。",
-      "调汁：蒜末、香醋、生抽、香油、少许糖与辣椒油。",
-      "浇汁拌匀，静置几分钟入味即可上桌。"
-    ],
-    "emoji": "🍄"
-  },
-  {
-    "id": "r289",
-    "name": "凉拌菠菜",
-    "category": "凉菜",
-    "protein": "素",
-    "timeMinutes": 18,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
-    "tags": [
-      "开胃",
-      "素口",
-      "家常",
-      "快手"
-    ],
-    "ingredients": [
-      "时蔬",
-      "蒜",
-      "盐",
-      "食用油"
-    ],
-    "steps": [
-      "主料洗净，按需要焯水或拍切。",
-      "调汁：蒜末、香醋、生抽、香油、少许糖与辣椒油。",
-      "浇汁拌匀，静置几分钟入味即可上桌。"
-    ],
     "emoji": "🟢"
   },
   {
-    "id": "r290",
+    "id": "r282",
     "name": "凉拌茄子",
     "category": "凉菜",
     "protein": "素",
-    "timeMinutes": 19,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 11,
+    "difficulty": 3,
     "tags": [
       "开胃",
       "素口",
       "家常",
-      "快手"
+      "一人食"
     ],
     "ingredients": [
       "时蔬",
@@ -8684,14 +7869,12 @@
     "emoji": "🍆"
   },
   {
-    "id": "r291",
+    "id": "r283",
     "name": "凉拌豆腐丝",
     "category": "凉菜",
     "protein": "蛋豆",
-    "timeMinutes": 10,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 12,
+    "difficulty": 1,
     "tags": [
       "开胃",
       "素口",
@@ -8713,14 +7896,12 @@
     "emoji": "🧈"
   },
   {
-    "id": "r292",
+    "id": "r284",
     "name": "凉拌豆干",
     "category": "凉菜",
     "protein": "蛋豆",
-    "timeMinutes": 11,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 13,
+    "difficulty": 2,
     "tags": [
       "开胃",
       "素口",
@@ -8741,18 +7922,17 @@
     "emoji": "🟫"
   },
   {
-    "id": "r293",
+    "id": "r285",
     "name": "蒜泥白肉凉菜盘",
     "category": "凉菜",
     "protein": "猪肉",
-    "timeMinutes": 12,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 14,
+    "difficulty": 3,
     "tags": [
       "开胃",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "猪肉",
@@ -8770,14 +7950,12 @@
     "emoji": "🧄"
   },
   {
-    "id": "r294",
+    "id": "r286",
     "name": "凉拌鸡丝",
     "category": "凉菜",
     "protein": "禽类",
-    "timeMinutes": 13,
-    "difficulty": 2,
-    "rarity": "rare",
-    "unlockAtStreak": 7,
+    "timeMinutes": 15,
+    "difficulty": 1,
     "tags": [
       "开胃",
       "有肉",
@@ -8799,14 +7977,12 @@
     "emoji": "🐔"
   },
   {
-    "id": "r295",
+    "id": "r287",
     "name": "口水鸡",
     "category": "凉菜",
     "protein": "禽类",
-    "timeMinutes": 14,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 16,
+    "difficulty": 2,
     "tags": [
       "开胃",
       "有肉",
@@ -8829,14 +8005,12 @@
     "emoji": "🍽️"
   },
   {
-    "id": "r296",
+    "id": "r288",
     "name": "凉拌猪耳朵",
     "category": "凉菜",
     "protein": "猪肉",
-    "timeMinutes": 15,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 17,
+    "difficulty": 3,
     "tags": [
       "开胃",
       "有肉",
@@ -8859,18 +8033,17 @@
     "emoji": "👂"
   },
   {
-    "id": "r297",
+    "id": "r289",
     "name": "凉拌海蜇",
     "category": "凉菜",
     "protein": "海鲜",
-    "timeMinutes": 16,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 18,
+    "difficulty": 1,
     "tags": [
       "开胃",
       "有肉",
-      "家常"
+      "家常",
+      "快手"
     ],
     "ingredients": [
       "海鲜主料",
@@ -8887,19 +8060,17 @@
     "emoji": "🪼"
   },
   {
-    "id": "r298",
+    "id": "r290",
     "name": "凉拌裙带菜",
     "category": "凉菜",
     "protein": "素",
-    "timeMinutes": 17,
-    "difficulty": 1,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 19,
+    "difficulty": 2,
     "tags": [
       "开胃",
       "素口",
       "家常",
-      "一人食"
+      "快手"
     ],
     "ingredients": [
       "时蔬",
@@ -8915,14 +8086,12 @@
     "emoji": "🌊"
   },
   {
-    "id": "r299",
+    "id": "r291",
     "name": "糖拌西红柿",
     "category": "凉菜",
     "protein": "素",
-    "timeMinutes": 18,
-    "difficulty": 2,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 10,
+    "difficulty": 3,
     "tags": [
       "开胃",
       "素口",
@@ -8943,19 +8112,16 @@
     "emoji": "🍬"
   },
   {
-    "id": "r300",
+    "id": "r292",
     "name": "凉拌萝卜丝",
     "category": "凉菜",
     "protein": "素",
-    "timeMinutes": 19,
-    "difficulty": 3,
-    "rarity": "common",
-    "unlockAtStreak": 0,
+    "timeMinutes": 11,
+    "difficulty": 1,
     "tags": [
       "开胃",
       "素口",
-      "家常",
-      "快手"
+      "家常"
     ],
     "ingredients": [
       "时蔬",

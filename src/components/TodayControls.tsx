@@ -1,13 +1,17 @@
-import type { RevealMode } from '../types/recipe'
+import type { DishCount, RevealMode } from '../types/recipe'
 import { CardsIcon, GiftIcon, WheelIcon } from './Icons'
 import styles from './TodayControls.module.css'
 
 type Props = {
   mode: RevealMode
   avoidYesterday: boolean
+  includeColdDishes: boolean
+  dishCount: DishCount
   disabled?: boolean
   onModeChange: (mode: RevealMode) => void
   onAvoidChange: (value: boolean) => void
+  onIncludeColdChange: (value: boolean) => void
+  onDishCountChange: (count: DishCount) => void
 }
 
 const modes = [
@@ -16,35 +20,48 @@ const modes = [
   { id: 'wheel' as const, label: '转盘', icon: WheelIcon },
 ]
 
+const counts: DishCount[] = [2, 3, 4, 5]
+
 export function TodayControls({
   mode,
   avoidYesterday,
+  includeColdDishes,
+  dishCount,
   disabled = false,
   onModeChange,
   onAvoidChange,
+  onIncludeColdChange,
+  onDishCountChange,
 }: Props) {
   return (
     <section className={styles.panel} aria-label="今日抽取偏好">
       <div className={styles.controlHeader}>
         <div>
+          <h2>抽几道菜</h2>
+          <p>{disabled ? '今天已定菜，明天可改' : '今日份数，可随时调整'}</p>
+        </div>
+      </div>
+
+      <div className={`${styles.segmented} ${styles.countSeg}`} role="group" aria-label="选择菜品数量">
+        {counts.map((n) => (
+          <button
+            key={n}
+            type="button"
+            className={`${styles.segment} ${dishCount === n ? styles.selected : ''}`}
+            aria-pressed={dishCount === n}
+            disabled={disabled}
+            onClick={() => onDishCountChange(n)}
+          >
+            {n} 道
+          </button>
+        ))}
+      </div>
+
+      <div className={styles.controlHeader}>
+        <div>
           <h2>揭晓方式</h2>
           <p>{disabled ? '今天已定菜，明天继续生效' : '选择今天的开饭仪式'}</p>
         </div>
-        <label className={styles.avoid}>
-          <span className={styles.avoidText}>
-            <strong>避开昨日</strong>
-            <small>下次抽取生效</small>
-          </span>
-          <input
-            type="checkbox"
-            checked={avoidYesterday}
-            disabled={disabled}
-            onChange={(event) => onAvoidChange(event.target.checked)}
-          />
-          <span className={styles.switch} aria-hidden="true">
-            <span />
-          </span>
-        </label>
       </div>
 
       <div className={styles.segmented} role="group" aria-label="选择揭晓方式">
@@ -61,6 +78,40 @@ export function TodayControls({
             <span>{label}</span>
           </button>
         ))}
+      </div>
+
+      <div className={styles.toggles}>
+        <label className={styles.avoid}>
+          <span className={styles.avoidText}>
+            <strong>避开昨日</strong>
+            <small>下次抽取生效</small>
+          </span>
+          <input
+            type="checkbox"
+            checked={avoidYesterday}
+            disabled={disabled}
+            onChange={(event) => onAvoidChange(event.target.checked)}
+          />
+          <span className={styles.switch} aria-hidden="true">
+            <span />
+          </span>
+        </label>
+
+        <label className={styles.avoid}>
+          <span className={styles.avoidText}>
+            <strong>包含凉菜</strong>
+            <small>默认不抽凉菜</small>
+          </span>
+          <input
+            type="checkbox"
+            checked={includeColdDishes}
+            disabled={disabled}
+            onChange={(event) => onIncludeColdChange(event.target.checked)}
+          />
+          <span className={styles.switch} aria-hidden="true">
+            <span />
+          </span>
+        </label>
       </div>
     </section>
   )

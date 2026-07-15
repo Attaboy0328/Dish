@@ -6,11 +6,10 @@ import styles from './RecipeDrawer.module.css'
 
 type Props = {
   recipe: Recipe | null
-  unlocked: boolean
   onClose: () => void
 }
 
-export function RecipeDrawer({ recipe, unlocked, onClose }: Props) {
+export function RecipeDrawer({ recipe, onClose }: Props) {
   const panelRef = useRef<HTMLDivElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
   const reduceMotion = useReducedMotion()
@@ -82,15 +81,14 @@ export function RecipeDrawer({ recipe, unlocked, onClose }: Props) {
           >
             <div className={styles.handle} />
             <div className={styles.head}>
-              <span className={styles.emoji}>{unlocked ? recipe.emoji : '❔'}</span>
+              <span className={styles.emoji}>{recipe.emoji}</span>
               <div>
                 <h2 id="recipe-title" className={styles.title}>
-                  {unlocked ? recipe.name : '未解锁菜谱'}
+                  {recipe.name}
                 </h2>
                 <p className={styles.sub}>
-                  {unlocked
-                    ? `${recipe.category} · ${recipe.protein} · ${recipe.timeMinutes} 分钟 · 难度 ${recipe.difficulty}`
-                    : `连吃 ${recipe.unlockAtStreak} 天解锁`}
+                  {recipe.category} · {recipe.protein} · {recipe.timeMinutes} 分钟 · 难度{' '}
+                  {recipe.difficulty}
                 </p>
               </div>
               <button
@@ -104,28 +102,22 @@ export function RecipeDrawer({ recipe, unlocked, onClose }: Props) {
               </button>
             </div>
 
-            {!unlocked ? (
-              <p className={styles.lock}>坚持打卡连吃，稀有菜会进入今日奖池。</p>
-            ) : (
-              <>
-                <section className={styles.section}>
-                  <h4>食材</h4>
-                  <ul className={styles.ing}>
-                    {recipe.ingredients.map((ing) => (
-                      <li key={ing}>{ing}</li>
-                    ))}
-                  </ul>
-                </section>
-                <section className={styles.section}>
-                  <h4>做法</h4>
-                  <ol className={styles.steps}>
-                    {recipe.steps.map((step, i) => (
-                      <li key={i}>{step}</li>
-                    ))}
-                  </ol>
-                </section>
-              </>
-            )}
+            <section className={styles.section}>
+              <h4>食材</h4>
+              <ul className={styles.ing}>
+                {recipe.ingredients.map((ing) => (
+                  <li key={ing}>{ing}</li>
+                ))}
+              </ul>
+            </section>
+            <section className={styles.section}>
+              <h4>做法</h4>
+              <ol className={styles.steps}>
+                {recipe.steps.map((step, i) => (
+                  <li key={i}>{step}</li>
+                ))}
+              </ol>
+            </section>
           </motion.div>
         </motion.div>
       )}

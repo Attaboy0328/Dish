@@ -45,23 +45,8 @@
   box-shadow: var(--shadow-sm);
 }
 
-.progressTrack {
-  height: 6px;
-  overflow: hidden;
-  border-radius: 999px;
-  background: var(--surface-secondary);
-}
-
-.progressTrack span {
-  display: block;
-  height: 100%;
-  border-radius: inherit;
-  background: var(--chili);
-  transition: width 400ms var(--ease-out);
-}
-
 .progress p {
-  margin: 9px 0 0;
+  margin: 0;
   color: var(--ink-soft);
   font-size: 0.72rem;
   line-height: 1.4;
@@ -136,18 +121,9 @@
   transform: scale(0.97);
 }
 
-.cell.locked {
-  background: var(--surface-secondary);
-}
-
 .cellEmoji {
   font-size: 1.75rem;
   line-height: 1;
-}
-
-.cell.locked .cellEmoji {
-  opacity: 0.45;
-  filter: grayscale(1);
 }
 
 .cellName {
@@ -160,37 +136,9 @@
   overflow: hidden;
 }
 
-.cell.locked .cellName {
-  color: var(--ink-soft);
-}
-
-.lockTag {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  font-size: 0.56rem;
-  background: rgba(28, 28, 30, 0.72);
-  color: #fff;
-  padding: 2px 5px;
-  border-radius: 6px;
-}
-
-.rarityDot {
-  position: absolute;
-  bottom: 7px;
-  left: 7px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--chili);
-}
-
-.rarityDot.rare {
-  background: var(--rare);
-}
-
-.rarityDot.legendary {
-  background: var(--legendary);
+.cellCat {
+  font-size: 0.58rem;
+  color: var(--ink-tertiary);
 }
 
 @media (max-width: 360px) {

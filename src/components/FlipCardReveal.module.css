@@ -11,6 +11,10 @@
   perspective: 1000px;
 }
 
+.rowWrap {
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+}
+
 .card {
   border: none;
   background: transparent;

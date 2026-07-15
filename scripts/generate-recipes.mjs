@@ -1,5 +1,5 @@
 /**
- * Generates ~300 home-style Chinese recipes with category/rarity distribution.
+ * Generates unique home-style Chinese recipes (no duplicate / 家庭版 names, no rarity).
  * Run: node scripts/generate-recipes.mjs
  */
 import { writeFileSync, mkdirSync } from 'node:fs'
@@ -168,9 +168,6 @@ const su = [
   ['木耳炒山药', '素', '🤍'],
   ['清炒莲藕片', '素', '🌸'],
   ['芹菜炒香干', '蛋豆', '🥬'],
-  ['凉拌黄瓜', '素', '🥒'],
-  ['拍黄瓜', '素', '🥒'],
-  ['凉拌木耳', '素', '🍄'],
   ['蒜泥茄子', '素', '🍆'],
   ['红椒炒藕片', '素', '🫑'],
   ['清炒豆芽', '素', '🌱'],
@@ -393,83 +390,45 @@ function categoryLabel(listName) {
   return { hun: '荤菜', su: '素菜', tang: '汤羹', zhushi: '主食', liang: '凉菜' }[listName]
 }
 
-function expandToTarget(items, target, listName) {
+function uniqueFrom(items, listName) {
+  const seen = new Set()
   const out = []
-  let i = 0
-  while (out.length < target) {
-    const [name, protein, emoji] = items[i % items.length]
-    const suffix = Math.floor(i / items.length)
-    const finalName = suffix === 0 ? name : `${name}·家庭版${suffix + 1}`
+  for (const [name, protein, emoji] of items) {
+    if (seen.has(name)) continue
+    seen.add(name)
     out.push({
       sourceName: name,
-      name: finalName,
+      name,
       protein,
       emoji: emoji.length <= 2 ? emoji : '🍽️',
       category: categoryLabel(listName),
     })
-    i++
   }
   return out
 }
 
-// Targets: 300 total — 荤45% 素25% 汤12% 主12% 凉6%
-const TARGETS = {
-  hun: 135,
-  su: 75,
-  tang: 36,
-  zhushi: 36,
-  liang: 18,
-}
-
 const all = [
-  ...expandToTarget(hun, TARGETS.hun, 'hun'),
-  ...expandToTarget(su, TARGETS.su, 'su'),
-  ...expandToTarget(tang, TARGETS.tang, 'tang'),
-  ...expandToTarget(zhushi, TARGETS.zhushi, 'zhushi'),
-  ...expandToTarget(liang, TARGETS.liang, 'liang'),
+  ...uniqueFrom(hun, 'hun'),
+  ...uniqueFrom(su, 'su'),
+  ...uniqueFrom(tang, 'tang'),
+  ...uniqueFrom(zhushi, 'zhushi'),
+  ...uniqueFrom(liang, 'liang'),
 ]
 
-// Assign rarities: ~40-50 rare+legendary
-const rarityPlan = []
-for (let i = 0; i < all.length; i++) rarityPlan.push('common')
-const rareCount = 38
-const legendaryCount = 10
-const unlockSlots = [3, 7, 14, 30]
-let assigned = 0
-for (let i = 0; i < rareCount + legendaryCount; i++) {
-  const idx = Math.floor((i * 7 + 13) % all.length)
-  if (rarityPlan[idx] !== 'common') continue
-  rarityPlan[idx] = i < legendaryCount ? 'legendary' : 'rare'
-  assigned++
-}
-// fill remaining if collisions
-for (let i = 0; assigned < rareCount + legendaryCount && i < all.length; i++) {
-  if (rarityPlan[i] === 'common') {
-    rarityPlan[i] = assigned < legendaryCount ? 'legendary' : 'rare'
-    assigned++
-  }
-}
+// Cross-category name dedupe: keep first occurrence
+const usedNames = new Set()
+const deduped = all.filter((item) => {
+  if (usedNames.has(item.name)) return false
+  usedNames.add(item.name)
+  return true
+})
 
-let unlockIdx = 0
-const recipes = all.map((item, index) => {
-  const rarity = rarityPlan[index]
-  let unlockAtStreak = 0
-  if (rarity === 'rare') {
-    unlockAtStreak = unlockSlots[unlockIdx % 3] // 3,7,14
-    unlockIdx++
-  } else if (rarity === 'legendary') {
-    unlockAtStreak = 30
-  }
-  // half of rares available from start for early excitement
-  if (rarity === 'rare' && index % 3 === 0) unlockAtStreak = 0
-
+const recipes = deduped.map((item, index) => {
   const timeMinutes =
     item.category === '汤羹' ? 35 + (index % 20) :
     item.category === '凉菜' ? 10 + (index % 10) :
     item.category === '主食' ? 20 + (index % 15) :
     15 + (index % 25)
-
-  const difficulty = rarity === 'legendary' ? 3 : rarity === 'rare' ? 2 : (1 + (index % 3))
 
   return {
     id: `r${String(index + 1).padStart(3, '0')}`,
@@ -477,9 +436,7 @@ const recipes = all.map((item, index) => {
     category: item.category,
     protein: item.protein,
     timeMinutes,
-    difficulty: Math.min(3, difficulty),
-    rarity,
-    unlockAtStreak,
+    difficulty: (1 + (index % 3)),
     tags: tagFor(item.category, item.protein),
     ingredients: ingredientsFor(item.sourceName, item.protein, item.category),
     steps: stepsFor(item.sourceName, item.category),
@@ -494,10 +451,8 @@ writeFileSync(outPath, JSON.stringify(recipes, null, 2), 'utf8')
 
 const counts = recipes.reduce((acc, r) => {
   acc.cat[r.category] = (acc.cat[r.category] || 0) + 1
-  acc.rar[r.rarity] = (acc.rar[r.rarity] || 0) + 1
   return acc
-}, { cat: {}, rar: {} })
+}, { cat: {} })
 
-console.log('Wrote', recipes.length, 'recipes to', outPath)
+console.log('Wrote', recipes.length, 'unique recipes to', outPath)
 console.log('Categories', counts.cat)
-console.log('Rarity', counts.rar)

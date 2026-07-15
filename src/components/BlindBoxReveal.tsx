@@ -11,16 +11,17 @@ type Props = {
 }
 
 export function BlindBoxReveal({ recipes, alreadyRevealed, onComplete, onSelect }: Props) {
+  const n = recipes.length
   const [opened, setOpened] = useState<boolean[]>(
-    alreadyRevealed ? [true, true, true] : [false, false, false],
+    alreadyRevealed ? Array(n).fill(true) : Array(n).fill(false),
   )
   const [started, setStarted] = useState(alreadyRevealed)
 
   const openAll = async () => {
     if (started) return
     setStarted(true)
-    for (let i = 0; i < 3; i++) {
-      await new Promise((r) => setTimeout(r, 450))
+    for (let i = 0; i < n; i++) {
+      await new Promise((r) => setTimeout(r, 380))
       setOpened((prev) => {
         const next = [...prev]
         next[i] = true
@@ -32,7 +33,7 @@ export function BlindBoxReveal({ recipes, alreadyRevealed, onComplete, onSelect 
 
   return (
     <div className={styles.wrap}>
-      <div className={styles.boxes}>
+      <div className={`${styles.boxes} ${n > 3 ? styles.boxesWrap : ''}`}>
         {recipes.map((recipe, i) => (
           <button
             key={recipe.id}
@@ -42,7 +43,7 @@ export function BlindBoxReveal({ recipes, alreadyRevealed, onComplete, onSelect 
             aria-label={opened[i] ? recipe.name : `盲盒 ${i + 1}`}
           >
             <motion.div
-              className={`${styles.boxInner} ${styles[recipe.rarity] ?? ''}`}
+              className={styles.boxInner}
               animate={
                 opened[i]
                   ? { rotateY: 0, scale: 1 }
@@ -71,9 +72,6 @@ export function BlindBoxReveal({ recipes, alreadyRevealed, onComplete, onSelect 
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ type: 'spring', stiffness: 280, damping: 18 }}
                   >
-                    {(recipe.rarity === 'rare' || recipe.rarity === 'legendary') && (
-                      <span className={styles.glow} aria-hidden />
-                    )}
                     <span className={styles.contentEmoji}>{recipe.emoji}</span>
                     <span className={styles.contentName}>{recipe.name}</span>
                   </motion.div>
@@ -86,16 +84,14 @@ export function BlindBoxReveal({ recipes, alreadyRevealed, onComplete, onSelect 
 
       {!alreadyRevealed && !started && (
         <>
-          <p className={styles.hint}>点下按钮，开三只今日盲盒</p>
+          <p className={styles.hint}>点下按钮，开 {n} 只今日盲盒</p>
           <button type="button" className={styles.startBtn} onClick={openAll}>
             开盒定菜
           </button>
         </>
       )}
       {started && !opened.every(Boolean) && <p className={styles.hint}>盒子打开中…</p>}
-      {opened.every(Boolean) && (
-        <p className={styles.hint}>点菜名可看做法</p>
-      )}
+      {opened.every(Boolean) && <p className={styles.hint}>点菜名可看做法</p>}
     </div>
   )
 }
