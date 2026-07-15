@@ -6,15 +6,25 @@ import { FlipCardReveal } from '../components/FlipCardReveal'
 import { WheelReveal } from '../components/WheelReveal'
 import { RecipeCard } from '../components/RecipeCard'
 import { RecipeDrawer } from '../components/RecipeDrawer'
+import { TodayControls } from '../components/TodayControls'
+import { CheckIcon } from '../components/Icons'
 import styles from './Home.module.css'
 
 type Props = { game: GameApi }
 
-const modeLabel = { box: '盲盒', flip: '翻牌', wheel: '转盘' } as const
 const MILESTONES = [3, 7, 14, 30]
 
 export function Home({ game }: Props) {
-  const { state, todayRecipes, markRevealed, reroll, confirm, isRecipeUnlocked } = game
+  const {
+    state,
+    todayRecipes,
+    markRevealed,
+    reroll,
+    confirm,
+    isRecipeUnlocked,
+    setRevealMode,
+    setAvoidYesterday,
+  } = game
   const [selected, setSelected] = useState<Recipe | null>(null)
   const revealed = state.today?.revealed ?? false
   const confirmed = state.today?.confirmed ?? false
@@ -33,12 +43,24 @@ export function Home({ game }: Props) {
 
   return (
     <div className={styles.page}>
-      <div className={styles.status}>
-        <span className={`${styles.pill} ${confirmed ? styles.ok : ''}`}>
-          {confirmed ? '✓ 今日已定菜打卡' : '今日还未确认菜单'}
+      <header className={styles.hero}>
+        <div>
+          <p className={styles.eyebrow}>{confirmed ? '今日菜单已确定' : '今日菜单'}</p>
+          <h2>{confirmed ? '安心开饭吧' : '三道菜，交给一点运气'}</h2>
+        </div>
+        <span className={`${styles.status} ${confirmed ? styles.statusDone : ''}`}>
+          {confirmed && <CheckIcon size={15} />}
+          {confirmed ? '已打卡' : '待揭晓'}
         </span>
-        <span className={styles.mode}>揭晓方式：{modeLabel[mode]}</span>
-      </div>
+      </header>
+
+      <TodayControls
+        mode={mode}
+        avoidYesterday={state.avoidYesterday}
+        disabled={confirmed}
+        onModeChange={setRevealMode}
+        onAvoidChange={setAvoidYesterday}
+      />
 
       <section className={styles.stage}>
         {todayRecipes.length === 3 && (
@@ -63,7 +85,7 @@ export function Home({ game }: Props) {
       {revealed && !confirmed && (
         <div className={styles.actions}>
           <button type="button" className={styles.primary} onClick={confirm}>
-            确认这三道 · 打卡
+            确认菜单并打卡
           </button>
           <button
             type="button"
@@ -71,12 +93,20 @@ export function Home({ game }: Props) {
             onClick={reroll}
             disabled={(state.today?.rerollsLeft ?? 0) <= 0}
           >
-            再抽一次（剩 {state.today?.rerollsLeft ?? 0}）
+            {state.today?.rerollsLeft ? '换一组菜单' : '今日已换过一次'}
           </button>
         </div>
       )}
 
-      {confirmed && <p className={styles.done}>今天就做这三道，明天见～</p>}
+      {confirmed && (
+        <div className={styles.done}>
+          <span className={styles.doneIcon}><CheckIcon size={18} /></span>
+          <div>
+            <strong>今日打卡完成</strong>
+            <p>菜单已保存，明天会避开这些菜。</p>
+          </div>
+        </div>
+      )}
       {unlockMsg && <p className={styles.unlockToast}>{unlockMsg}</p>}
 
       <RecipeDrawer

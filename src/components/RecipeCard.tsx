@@ -1,4 +1,5 @@
 import type { Recipe } from '../types/recipe'
+import { ChevronIcon } from './Icons'
 import styles from './RecipeCard.module.css'
 
 const rarityLabel = {
@@ -13,41 +14,30 @@ type Props = {
 }
 
 export function RecipeCard({ recipe, onClick }: Props) {
-  const accent =
-    recipe.rarity === 'legendary'
-      ? 'var(--legendary)'
-      : recipe.rarity === 'rare'
-        ? 'var(--rare)'
-        : 'var(--chili)'
-
   return (
     <button
       type="button"
-      className={styles.card}
-      style={{ ['--accent' as string]: accent }}
+      className={`${styles.card} ${styles[recipe.rarity]}`}
       onClick={onClick}
+      aria-label={`查看${recipe.name}做法`}
     >
-      <div className={styles.top}>
-        <span className={styles.emoji} aria-hidden>
+      <span className={styles.emoji} aria-hidden>
           {recipe.emoji}
-        </span>
-        <div className={styles.meta}>
+      </span>
+      <div className={styles.meta}>
+        <div className={styles.titleLine}>
           <h3 className={styles.name}>{recipe.name}</h3>
-          <p className={styles.sub}>
-            {recipe.category} · {recipe.timeMinutes} 分钟 · 难度 {recipe.difficulty}
-          </p>
-        </div>
+          {recipe.rarity !== 'common' && (
         <span className={`${styles.badge} ${styles[recipe.rarity]}`}>
           {rarityLabel[recipe.rarity]}
         </span>
+          )}
+        </div>
+        <p className={styles.sub}>
+          {recipe.category} · {recipe.timeMinutes} 分钟 · 难度 {recipe.difficulty}
+        </p>
       </div>
-      <div className={styles.tags}>
-        {recipe.tags.slice(0, 3).map((t) => (
-          <span key={t} className={styles.tag}>
-            {t}
-          </span>
-        ))}
-      </div>
+      <ChevronIcon className={styles.chevron} size={18} />
     </button>
   )
 }

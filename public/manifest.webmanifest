@@ -1,0 +1,18 @@
+{
+  "name": "开饭盒子",
+  "short_name": "开饭",
+  "description": "每天随机揭晓三道家常菜",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f7",
+  "theme_color": "#f5f5f7",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

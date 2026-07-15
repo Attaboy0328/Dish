@@ -4,91 +4,159 @@
   gap: 14px;
 }
 
-.intro {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--ink-soft);
-  line-height: 1.45;
-}
-
-.stats {
+.header {
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 1px 2px;
 }
 
-.stat {
-  font-size: 0.75rem;
-  padding: 5px 10px;
+.header p {
+  margin: 0 0 3px;
+  color: var(--ink-soft);
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.32rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.header strong {
+  color: var(--chili);
+  font-size: 1.15rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.header strong span {
+  color: var(--ink-tertiary);
+  font-size: 0.72rem;
+  font-weight: 550;
+}
+
+.progress {
+  padding: 14px;
+  border-radius: var(--radius);
+  background: var(--paper);
+  box-shadow: var(--shadow-sm);
+}
+
+.progressTrack {
+  height: 6px;
+  overflow: hidden;
   border-radius: 999px;
-  background: rgba(196, 60, 44, 0.1);
-  color: var(--chili-deep);
+  background: var(--surface-secondary);
+}
+
+.progressTrack span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--chili);
+  transition: width 400ms var(--ease-out);
+}
+
+.progress p {
+  margin: 9px 0 0;
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  line-height: 1.4;
 }
 
 .filters {
   display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 2px 1px 5px;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+}
+
+.filters::-webkit-scrollbar {
+  display: none;
 }
 
 .filter {
-  border: 1px solid var(--line);
+  flex: 0 0 auto;
+  min-height: 36px;
+  border: none;
   background: var(--paper);
   border-radius: 999px;
-  padding: 6px 12px;
-  font-size: 0.75rem;
+  padding: 7px 14px;
+  font-size: 0.76rem;
+  font-weight: 580;
   color: var(--ink-soft);
+  box-shadow: var(--shadow-sm);
+  scroll-snap-align: start;
+  transition:
+    color 180ms var(--ease-out),
+    background 180ms var(--ease-out),
+    transform 180ms var(--ease-out);
 }
 
 .filter.on {
-  background: var(--soy);
-  color: #fff8ee;
-  border-color: var(--soy);
+  background: var(--ink);
+  color: #fff;
+}
+
+.filter:active {
+  transform: scale(0.96);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  gap: 9px;
 }
 
 .cell {
   border: none;
-  aspect-ratio: 1;
-  border-radius: 14px;
+  min-height: 104px;
+  border-radius: var(--radius);
   background: var(--paper);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  padding: 6px;
+  gap: 7px;
+  padding: 10px 6px;
   position: relative;
   overflow: hidden;
+  transition:
+    transform 180ms var(--ease-out),
+    background 180ms var(--ease-out);
+}
+
+.cell:active {
+  transform: scale(0.97);
 }
 
 .cell.locked {
-  background: #ddd0c0;
-  filter: grayscale(0.4);
+  background: var(--surface-secondary);
 }
 
 .cellEmoji {
-  font-size: 1.6rem;
+  font-size: 1.75rem;
   line-height: 1;
 }
 
 .cell.locked .cellEmoji {
-  opacity: 0.35;
-  filter: blur(1px);
+  opacity: 0.45;
+  filter: grayscale(1);
 }
 
 .cellName {
-  font-size: 0.65rem;
+  font-size: 0.68rem;
+  font-weight: 600;
   text-align: center;
-  color: var(--soy);
-  line-height: 1.15;
-  max-height: 2.3em;
+  color: var(--ink);
+  line-height: 1.2;
+  max-height: 2.4em;
   overflow: hidden;
 }
 
@@ -98,10 +166,10 @@
 
 .lockTag {
   position: absolute;
-  top: 4px;
-  right: 4px;
-  font-size: 0.55rem;
-  background: rgba(42, 26, 18, 0.7);
+  top: 6px;
+  right: 6px;
+  font-size: 0.56rem;
+  background: rgba(28, 28, 30, 0.72);
   color: #fff;
   padding: 2px 5px;
   border-radius: 6px;
@@ -109,10 +177,10 @@
 
 .rarityDot {
   position: absolute;
-  bottom: 4px;
-  left: 4px;
-  width: 6px;
-  height: 6px;
+  bottom: 7px;
+  left: 7px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: var(--chili);
 }
@@ -123,4 +191,10 @@
 
 .rarityDot.legendary {
   background: var(--legendary);
+}
+
+@media (max-width: 360px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

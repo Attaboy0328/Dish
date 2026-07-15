@@ -7,7 +7,7 @@
 
 .stage {
   position: relative;
-  width: min(280px, 80vw);
+  width: min(250px, 72vw);
   aspect-ratio: 1;
 }
 
@@ -15,20 +15,20 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  border: 6px solid var(--soy);
-  box-shadow: var(--shadow);
+  border: 5px solid #302725;
+  box-shadow: 0 8px 20px rgba(40, 32, 29, 0.16);
   position: relative;
   overflow: hidden;
   background: conic-gradient(
     from 0deg,
-    #c43c2c 0deg 45deg,
-    #d4a017 45deg 90deg,
-    #4a2c1a 90deg 135deg,
-    #e8d5bc 135deg 180deg,
-    #c43c2c 180deg 225deg,
-    #d4a017 225deg 270deg,
-    #4a2c1a 270deg 315deg,
-    #e8d5bc 315deg 360deg
+    #c44736 0deg 45deg,
+    #c9952e 45deg 90deg,
+    #403532 90deg 135deg,
+    #ded6d2 135deg 180deg,
+    #c44736 180deg 225deg,
+    #c9952e 225deg 270deg,
+    #403532 270deg 315deg,
+    #ded6d2 315deg 360deg
   );
 }
 
@@ -75,7 +75,7 @@
   height: 48px;
   border-radius: 50%;
   background: var(--paper);
-  border: 3px solid var(--soy);
+  border: 3px solid #302725;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +98,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-sm);
   text-align: left;
   width: 100%;
 }
@@ -108,9 +108,9 @@
 }
 
 .chipName {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  color: var(--soy);
+  font-size: 0.88rem;
+  font-weight: 680;
+  color: var(--ink);
 }
 
 .chipMeta {
@@ -120,20 +120,27 @@
 
 .hint {
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.76rem;
   color: var(--ink-soft);
   margin: 0;
 }
 
 .startBtn {
+  width: 100%;
+  min-height: 48px;
   border: none;
   background: var(--chili);
-  color: #fff8ee;
-  font-weight: 700;
-  padding: 12px 28px;
-  border-radius: 999px;
-  font-size: 1rem;
-  box-shadow: var(--shadow);
+  color: #fff;
+  font-weight: 680;
+  padding: 12px 20px;
+  border-radius: 13px;
+  font-size: 0.92rem;
+  box-shadow: 0 5px 12px rgba(169, 54, 40, 0.2);
+  transition: transform 180ms var(--ease-out);
+}
+
+.startBtn:active {
+  transform: scale(0.985);
 }
 
 .startBtn:disabled {

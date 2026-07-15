@@ -36,23 +36,29 @@ export function Codex({ game }: Props) {
 
   return (
     <div className={styles.page}>
-      <p className={styles.intro}>
-        三百道家常菜图鉴。稀有与传说菜需连吃打卡解锁后才进奖池。
-      </p>
-      <div className={styles.stats}>
-        <span className={styles.stat}>
-          已解锁 {unlockedCount} / {recipes.length}
-        </span>
-        <span className={styles.stat}>连吃 {game.state.streak} 天</span>
-      </div>
+      <header className={styles.header}>
+        <div>
+          <p>我的图鉴</p>
+          <h2>家常菜收藏</h2>
+        </div>
+        <strong>{unlockedCount}<span> / {recipes.length}</span></strong>
+      </header>
 
-      <div className={styles.filters}>
+      <section className={styles.progress} aria-label={`已解锁 ${unlockedCount} 道菜`}>
+        <div className={styles.progressTrack}>
+          <span style={{ width: `${(unlockedCount / recipes.length) * 100}%` }} />
+        </div>
+        <p>连续打卡可解锁更多稀有菜，目前连吃 {game.state.streak} 天。</p>
+      </section>
+
+      <div className={styles.filters} role="group" aria-label="菜谱分类">
         {FILTERS.map((f) => (
           <button
             key={f}
             type="button"
             className={`${styles.filter} ${filter === f ? styles.on : ''}`}
             onClick={() => setFilter(f)}
+            aria-pressed={filter === f}
           >
             {f}
           </button>
@@ -68,6 +74,7 @@ export function Codex({ game }: Props) {
               type="button"
               className={`${styles.cell} ${unlocked ? '' : styles.locked}`}
               onClick={() => setSelected(r)}
+              aria-label={unlocked ? `查看${r.name}` : `未解锁，连吃${r.unlockAtStreak}天解锁`}
             >
               <span className={`${styles.rarityDot} ${styles[r.rarity] ?? ''}`} />
               {!unlocked && (

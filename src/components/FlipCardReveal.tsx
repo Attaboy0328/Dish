@@ -39,6 +39,7 @@ export function FlipCardReveal({ recipes, alreadyRevealed, onComplete, onSelect 
             type="button"
             className={styles.card}
             onClick={() => flipped[i] && onSelect?.(recipe)}
+            aria-label={flipped[i] ? `查看${recipe.name}做法` : `待揭晓菜牌 ${i + 1}`}
           >
             <motion.div
               className={styles.inner}

@@ -1,5 +1,7 @@
-import { motion, AnimatePresence } from 'motion/react'
+import { useEffect, useRef } from 'react'
+import { motion, AnimatePresence, useReducedMotion } from 'motion/react'
 import type { Recipe } from '../types/recipe'
+import { CloseIcon } from './Icons'
 import styles from './RecipeDrawer.module.css'
 
 type Props = {
@@ -9,6 +11,42 @@ type Props = {
 }
 
 export function RecipeDrawer({ recipe, unlocked, onClose }: Props) {
+  const panelRef = useRef<HTMLDivElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+  const reduceMotion = useReducedMotion()
+
+  useEffect(() => {
+    if (!recipe) return
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    closeRef.current?.focus()
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') onClose()
+      if (event.key !== 'Tab' || !panelRef.current) return
+
+      const focusable = panelRef.current.querySelectorAll<HTMLElement>(
+        'button:not([disabled]), [href], [tabindex]:not([tabindex="-1"])',
+      )
+      if (!focusable.length) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown)
+    return () => {
+      document.body.style.overflow = previousOverflow
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [recipe, onClose])
+
   return (
     <AnimatePresence>
       {recipe && (
@@ -20,29 +58,49 @@ export function RecipeDrawer({ recipe, unlocked, onClose }: Props) {
           onClick={onClose}
         >
           <motion.div
+            ref={panelRef}
             className={styles.panel}
-            initial={{ y: '100%' }}
+            initial={reduceMotion ? { opacity: 0 } : { y: '100%' }}
             animate={{ y: 0 }}
-            exit={{ y: '100%' }}
-            transition={{ type: 'spring', stiffness: 320, damping: 32 }}
+            exit={reduceMotion ? { opacity: 0 } : { y: '100%' }}
+            transition={
+              reduceMotion
+                ? { duration: 0.12 }
+                : { type: 'spring', stiffness: 360, damping: 36, mass: 0.9 }
+            }
+            drag={reduceMotion ? false : 'y'}
+            dragConstraints={{ top: 0, bottom: 0 }}
+            dragElastic={{ top: 0, bottom: 0.35 }}
+            onDragEnd={(_, info) => {
+              if (info.offset.y > 110 || info.velocity.y > 650) onClose()
+            }}
             onClick={(e) => e.stopPropagation()}
             role="dialog"
             aria-modal
-            aria-label={recipe.name}
+            aria-labelledby="recipe-title"
+            tabIndex={-1}
           >
             <div className={styles.handle} />
             <div className={styles.head}>
               <span className={styles.emoji}>{unlocked ? recipe.emoji : '❔'}</span>
               <div>
-                <h2 className={styles.title}>{unlocked ? recipe.name : '未解锁菜谱'}</h2>
+                <h2 id="recipe-title" className={styles.title}>
+                  {unlocked ? recipe.name : '未解锁菜谱'}
+                </h2>
                 <p className={styles.sub}>
                   {unlocked
                     ? `${recipe.category} · ${recipe.protein} · ${recipe.timeMinutes} 分钟 · 难度 ${recipe.difficulty}`
                     : `连吃 ${recipe.unlockAtStreak} 天解锁`}
                 </p>
               </div>
-              <button type="button" className={styles.close} onClick={onClose} aria-label="关闭">
-                ✕
+              <button
+                ref={closeRef}
+                type="button"
+                className={styles.close}
+                onClick={onClose}
+                aria-label="关闭菜谱"
+              >
+                <CloseIcon size={18} />
               </button>
             </div>
 

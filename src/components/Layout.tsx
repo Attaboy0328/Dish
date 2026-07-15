@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import styles from './Layout.module.css'
 import type { GameApi } from '../hooks/useGameState'
+import { BookIcon, SettingsIcon, TodayIcon } from './Icons'
 
 type Props = {
   game: GameApi
@@ -9,21 +10,30 @@ type Props = {
 export function Layout({ game }: Props) {
   const { streak } = game.state
   const checkedIn = game.state.today?.confirmed
+  const dayLabel = new Intl.DateTimeFormat('zh-CN', {
+    month: 'long',
+    day: 'numeric',
+    weekday: 'short',
+  }).format(new Date())
 
   return (
     <div className={styles.shell}>
       <header className={styles.header}>
-        <div>
+        <div className={styles.brandGroup}>
+          <p className={styles.date}>{dayLabel}</p>
           <h1 className={styles.brand}>开饭盒子</h1>
-          <p className={styles.tagline}>今天吃啥就交给运气</p>
         </div>
-        <div className={styles.streak} title={checkedIn ? '今日已打卡' : '确认菜单后打卡'}>
+        <div
+          className={`${styles.streak} ${checkedIn ? styles.streakChecked : ''}`}
+          aria-label={`${streak} 天连续打卡${checkedIn ? '，今日已完成' : ''}`}
+        >
+          <span className={styles.streakFlame} aria-hidden>{checkedIn ? '✓' : '🔥'}</span>
           <span className={styles.streakNum}>{streak}</span>
-          <span className={styles.streakLabel}>{checkedIn ? '连吃 · 已打卡' : '连吃天数'}</span>
+          <span className={styles.streakLabel}>天</span>
         </div>
       </header>
 
-      <main className={styles.main}>
+      <main id="main-content" className={styles.main}>
         <Outlet />
       </main>
 
@@ -35,7 +45,7 @@ export function Layout({ game }: Props) {
             isActive ? `${styles.navLink} ${styles.navLinkActive}` : styles.navLink
           }
         >
-          <span className={styles.navIcon}>🍱</span>
+          <TodayIcon className={styles.navIcon} />
           今日
         </NavLink>
         <NavLink
@@ -44,7 +54,7 @@ export function Layout({ game }: Props) {
             isActive ? `${styles.navLink} ${styles.navLinkActive}` : styles.navLink
           }
         >
-          <span className={styles.navIcon}>📖</span>
+          <BookIcon className={styles.navIcon} />
           图鉴
         </NavLink>
         <NavLink
@@ -53,7 +63,7 @@ export function Layout({ game }: Props) {
             isActive ? `${styles.navLink} ${styles.navLinkActive}` : styles.navLink
           }
         >
-          <span className={styles.navIcon}>⚙️</span>
+          <SettingsIcon className={styles.navIcon} />
           设置
         </NavLink>
       </nav>
