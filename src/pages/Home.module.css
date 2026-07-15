@@ -86,31 +86,6 @@
   margin-top: 2px;
 }
 
-.primary {
-  min-height: 50px;
-  border: none;
-  background: var(--chili);
-  color: #fff;
-  font-weight: 680;
-  padding: 13px 18px;
-  border-radius: 14px;
-  font-size: 0.96rem;
-  box-shadow: 0 5px 12px rgba(169, 54, 40, 0.2);
-  transition:
-    background 180ms var(--ease-out),
-    transform 180ms var(--ease-out);
-}
-
-.primary:disabled {
-  opacity: 0.45;
-  cursor: not-allowed;
-}
-
-.primary:active {
-  background: var(--chili-deep);
-  transform: scale(0.985);
-}
-
 .secondary {
   min-height: 46px;
   border: none;
@@ -123,54 +98,7 @@
   transition: transform 180ms var(--ease-out);
 }
 
-.secondary:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-
 .secondary:active {
   transform: scale(0.985);
 }
 
-.done {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px;
-  border-radius: 14px;
-  background: rgba(46, 125, 79, 0.1);
-  color: var(--success);
-}
-
-.doneIcon {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  background: var(--success);
-  color: #fff;
-}
-
-.done strong {
-  display: block;
-  font-size: 0.86rem;
-}
-
-.done p {
-  margin: 2px 0 0;
-  color: #4d6a58;
-  font-size: 0.72rem;
-}
-
-.unlockToast {
-  text-align: center;
-  padding: 12px 14px;
-  border-radius: 14px;
-  background: #f7edda;
-  color: #72500e;
-  font-weight: 600;
-  font-size: 0.82rem;
-  line-height: 1.4;
-}

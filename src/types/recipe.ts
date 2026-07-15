@@ -17,8 +17,6 @@ export type Recipe = {
 }
 
 export type GameState = {
-  streak: number
-  lastCheckInDate: string | null
   revealMode: RevealMode
   includeColdDishes: boolean
   includeSeafood: boolean
@@ -31,9 +29,8 @@ export type GameState = {
     dishCount: DishCount
     includeColdDishes: boolean
     includeSeafood: boolean
-    /** Seed counter for today's draws; unlimited rerolls before confirm */
+    /** Seed counter for today's draws */
     drawAttempt: number
-    confirmed: boolean
     revealed: boolean
   } | null
 }

@@ -1,15 +1,8 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import styles from './Layout.module.css'
-import type { GameApi } from '../hooks/useGameState'
 import { BookIcon, SettingsIcon, TodayIcon } from './Icons'
 
-type Props = {
-  game: GameApi
-}
-
-export function Layout({ game }: Props) {
-  const { streak } = game.state
-  const checkedIn = game.state.today?.confirmed
+export function Layout() {
   const dayLabel = new Intl.DateTimeFormat('zh-CN', {
     month: 'long',
     day: 'numeric',
@@ -22,14 +15,6 @@ export function Layout({ game }: Props) {
         <div className={styles.brandGroup}>
           <p className={styles.date}>{dayLabel}</p>
           <h1 className={styles.brand}>开饭盒子</h1>
-        </div>
-        <div
-          className={`${styles.streak} ${checkedIn ? styles.streakChecked : ''}`}
-          aria-label={`${streak} 天连续打卡${checkedIn ? '，今日已完成' : ''}`}
-        >
-          <span className={styles.streakFlame} aria-hidden>{checkedIn ? '✓' : '🔥'}</span>
-          <span className={styles.streakNum}>{streak}</span>
-          <span className={styles.streakLabel}>天</span>
         </div>
       </header>
 

@@ -1,10 +1,8 @@
 import type { DishCount, GameState, RevealMode } from '../types/recipe'
 
-export const STORAGE_KEY = 'kai-fan-box:v4'
+export const STORAGE_KEY = 'kai-fan-box:v5'
 
 export const defaultState = (): GameState => ({
-  streak: 0,
-  lastCheckInDate: null,
   revealMode: 'box',
   includeColdDishes: false,
   includeSeafood: false,
@@ -14,7 +12,16 @@ export const defaultState = (): GameState => ({
   today: null,
 })
 
-type LegacyToday = NonNullable<GameState['today']> & { rerollsLeft?: number }
+type LegacyToday = {
+  date?: string
+  recipeIds?: string[]
+  dishCount?: unknown
+  includeColdDishes?: boolean
+  includeSeafood?: boolean
+  drawAttempt?: number
+  rerollsLeft?: number
+  revealed?: boolean
+}
 
 function normalizeToday(today: unknown): GameState['today'] {
   if (!today || typeof today !== 'object') return null
@@ -33,7 +40,6 @@ function normalizeToday(today: unknown): GameState['today'] {
     includeColdDishes: Boolean(t.includeColdDishes),
     includeSeafood: Boolean(t.includeSeafood),
     drawAttempt,
-    confirmed: Boolean(t.confirmed),
     revealed: Boolean(t.revealed),
   }
 }
@@ -42,16 +48,19 @@ export function loadState(): GameState {
   try {
     const raw =
       localStorage.getItem(STORAGE_KEY) ??
+      localStorage.getItem('kai-fan-box:v4') ??
       localStorage.getItem('kai-fan-box:v3') ??
       localStorage.getItem('kai-fan-box:v2')
     if (!raw) return defaultState()
     const parsed = JSON.parse(raw) as Partial<GameState>
-    const next = {
+    const next: GameState = {
       ...defaultState(),
-      ...parsed,
-      dishCount: normalizeDishCount(parsed.dishCount),
+      revealMode: parsed.revealMode ?? 'box',
       includeColdDishes: Boolean(parsed.includeColdDishes),
       includeSeafood: Boolean(parsed.includeSeafood),
+      dishCount: normalizeDishCount(parsed.dishCount),
+      yesterdayIds: Array.isArray(parsed.yesterdayIds) ? parsed.yesterdayIds : [],
+      yesterdayDate: parsed.yesterdayDate ?? null,
       today: normalizeToday(parsed.today),
     }
     saveState(next)

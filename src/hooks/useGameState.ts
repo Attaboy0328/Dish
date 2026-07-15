@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 import recipesData from '../data/recipes.json'
 import type { DishCount, GameState, Recipe, RevealMode } from '../types/recipe'
 import { buildPool, drawRecipes } from '../lib/draw'
-import { daysBetween, todayKey, yesterdayKey } from '../lib/rng'
+import { todayKey, yesterdayKey } from '../lib/rng'
 import { defaultState, loadState, normalizeDishCount, saveState } from '../lib/storage'
 
 const recipes = recipesData as Recipe[]
@@ -31,7 +31,12 @@ function drawForState(state: GameState, seed: string) {
   return drawRecipes(source.length >= count ? source : recipes, seed, count)
 }
 
-function todaySlot(state: GameState, recipeIds: string[], drawAttempt: number) {
+function todaySlot(
+  state: GameState,
+  recipeIds: string[],
+  drawAttempt: number,
+  revealed = false,
+) {
   return {
     date: todayKey(),
     recipeIds,
@@ -39,8 +44,7 @@ function todaySlot(state: GameState, recipeIds: string[], drawAttempt: number) {
     includeColdDishes: state.includeColdDishes,
     includeSeafood: state.includeSeafood,
     drawAttempt,
-    confirmed: false,
-    revealed: false,
+    revealed,
   }
 }
 
@@ -63,20 +67,11 @@ export function useGameState() {
       let next = { ...prev }
 
       if (prev.today && prev.today.date !== today) {
-        if (prev.today.confirmed) {
-          next = {
-            ...next,
-            yesterdayIds: prev.today.recipeIds,
-            yesterdayDate: prev.today.date,
-          }
-        }
-        next.today = null
-      }
-
-      if (next.lastCheckInDate && next.lastCheckInDate !== today) {
-        const gap = daysBetween(next.lastCheckInDate, today)
-        if (gap > 1) {
-          next = { ...next, streak: 0 }
+        next = {
+          ...next,
+          yesterdayIds: prev.today.recipeIds,
+          yesterdayDate: prev.today.date,
+          today: null,
         }
       }
 
@@ -102,12 +97,11 @@ export function useGameState() {
 
   const redrawToday = useCallback(
     (base: GameState) => {
-      if (base.today?.confirmed) return base
       const attempt = (base.today?.drawAttempt ?? 0) + 1
       const picks = drawForState(base, seedFor(base, attempt))
       const next = {
         ...base,
-        today: todaySlot(base, picks.map((p) => p.id), attempt),
+        today: todaySlot(base, picks.map((p) => p.id), attempt, false),
       }
       persist(next)
       return next
@@ -124,30 +118,9 @@ export function useGameState() {
   }, [state, persist])
 
   const reroll = useCallback(() => {
-    if (!state.today || state.today.confirmed) return
+    if (!state.today) return
     redrawToday(state)
   }, [state, redrawToday])
-
-  const confirm = useCallback(() => {
-    if (!state.today || state.today.confirmed || !state.today.revealed) return
-    const today = todayKey()
-    let streak = state.streak
-    if (state.lastCheckInDate === yesterdayKey()) {
-      streak = state.streak + 1
-    } else if (state.lastCheckInDate === today) {
-      streak = state.streak
-    } else {
-      streak = 1
-    }
-    persist({
-      ...state,
-      streak,
-      lastCheckInDate: today,
-      yesterdayIds: state.today.recipeIds,
-      yesterdayDate: today,
-      today: { ...state.today, confirmed: true },
-    })
-  }, [state, persist])
 
   const setRevealMode = useCallback(
     (mode: RevealMode) => {
@@ -158,35 +131,23 @@ export function useGameState() {
 
   const setIncludeColdDishes = useCallback(
     (value: boolean) => {
-      if (state.today?.confirmed) {
-        persist({ ...state, includeColdDishes: value })
-        return
-      }
       redrawToday({ ...state, includeColdDishes: value })
     },
-    [state, persist, redrawToday],
+    [state, redrawToday],
   )
 
   const setIncludeSeafood = useCallback(
     (value: boolean) => {
-      if (state.today?.confirmed) {
-        persist({ ...state, includeSeafood: value })
-        return
-      }
       redrawToday({ ...state, includeSeafood: value })
     },
-    [state, persist, redrawToday],
+    [state, redrawToday],
   )
 
   const setDishCount = useCallback(
     (count: DishCount) => {
-      if (state.today?.confirmed) {
-        persist({ ...state, dishCount: count })
-        return
-      }
       redrawToday({ ...state, dishCount: count })
     },
-    [state, persist, redrawToday],
+    [state, redrawToday],
   )
 
   const reset = useCallback(() => {
@@ -204,7 +165,6 @@ export function useGameState() {
     todayRecipes,
     markRevealed,
     reroll,
-    confirm,
     setRevealMode,
     setIncludeColdDishes,
     setIncludeSeafood,

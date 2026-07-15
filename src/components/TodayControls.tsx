@@ -7,7 +7,6 @@ type Props = {
   includeColdDishes: boolean
   includeSeafood: boolean
   dishCount: DishCount
-  disabled?: boolean
   onModeChange: (mode: RevealMode) => void
   onIncludeColdChange: (value: boolean) => void
   onIncludeSeafoodChange: (value: boolean) => void
@@ -27,7 +26,6 @@ export function TodayControls({
   includeColdDishes,
   includeSeafood,
   dishCount,
-  disabled = false,
   onModeChange,
   onIncludeColdChange,
   onIncludeSeafoodChange,
@@ -38,7 +36,7 @@ export function TodayControls({
       <div className={styles.controlHeader}>
         <div>
           <h2>抽几道菜</h2>
-          <p>{disabled ? '今天已定菜，明天可改' : '今日份数，可随时调整'}</p>
+          <p>今日份数，可随时调整</p>
         </div>
       </div>
 
@@ -49,7 +47,6 @@ export function TodayControls({
             type="button"
             className={`${styles.segment} ${dishCount === n ? styles.selected : ''}`}
             aria-pressed={dishCount === n}
-            disabled={disabled}
             onClick={() => onDishCountChange(n)}
           >
             {n} 道
@@ -60,7 +57,7 @@ export function TodayControls({
       <div className={styles.controlHeader}>
         <div>
           <h2>揭晓方式</h2>
-          <p>{disabled ? '今天已定菜，明天继续生效' : '选择今天的开饭仪式'}</p>
+          <p>选择今天的开饭仪式</p>
         </div>
       </div>
 
@@ -71,7 +68,6 @@ export function TodayControls({
             type="button"
             className={`${styles.segment} ${mode === id ? styles.selected : ''}`}
             aria-pressed={mode === id}
-            disabled={disabled}
             onClick={() => onModeChange(id)}
           >
             <Icon size={18} />
@@ -89,7 +85,6 @@ export function TodayControls({
           <input
             type="checkbox"
             checked={includeColdDishes}
-            disabled={disabled}
             onChange={(event) => onIncludeColdChange(event.target.checked)}
           />
           <span className={styles.switch} aria-hidden="true">
@@ -105,7 +100,6 @@ export function TodayControls({
           <input
             type="checkbox"
             checked={includeSeafood}
-            disabled={disabled}
             onChange={(event) => onIncludeSeafoodChange(event.target.checked)}
           />
           <span className={styles.switch} aria-hidden="true">

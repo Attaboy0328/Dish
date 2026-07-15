@@ -6,7 +6,6 @@ import { FlipCardReveal } from '../components/FlipCardReveal'
 import { WheelReveal } from '../components/WheelReveal'
 import { RecipeDrawer } from '../components/RecipeDrawer'
 import { TodayControls } from '../components/TodayControls'
-import { CheckIcon } from '../components/Icons'
 import styles from './Home.module.css'
 
 type Props = { game: GameApi }
@@ -17,7 +16,6 @@ export function Home({ game }: Props) {
     todayRecipes,
     markRevealed,
     reroll,
-    confirm,
     setRevealMode,
     setIncludeColdDishes,
     setIncludeSeafood,
@@ -25,7 +23,6 @@ export function Home({ game }: Props) {
   } = game
   const [selected, setSelected] = useState<Recipe | null>(null)
   const revealed = state.today?.revealed ?? false
-  const confirmed = state.today?.confirmed ?? false
   const mode = state.revealMode
   const count = state.dishCount
 
@@ -36,14 +33,11 @@ export function Home({ game }: Props) {
     <div className={styles.page}>
       <header className={styles.hero}>
         <div className={styles.heroCopy}>
-          <p className={styles.eyebrow}>{confirmed ? '今日菜单已确定' : '今日菜单'}</p>
-          <h2 className={styles.headline}>
-            {confirmed ? '安心开饭吧' : '今天吃啥交给运气'}
-          </h2>
+          <p className={styles.eyebrow}>今日菜单</p>
+          <h2 className={styles.headline}>今天吃啥交给运气</h2>
         </div>
-        <span className={`${styles.status} ${confirmed ? styles.statusDone : ''}`}>
-          {confirmed && <CheckIcon size={15} />}
-          {confirmed ? '已打卡' : '待揭晓'}
+        <span className={`${styles.status} ${revealed ? styles.statusDone : ''}`}>
+          {revealed ? '已揭晓' : '待揭晓'}
         </span>
       </header>
 
@@ -52,7 +46,6 @@ export function Home({ game }: Props) {
         includeColdDishes={state.includeColdDishes}
         includeSeafood={state.includeSeafood}
         dishCount={count}
-        disabled={confirmed}
         onModeChange={setRevealMode}
         onIncludeColdChange={setIncludeColdDishes}
         onIncludeSeafoodChange={setIncludeSeafood}
@@ -71,24 +64,11 @@ export function Home({ game }: Props) {
         )}
       </section>
 
-      {revealed && !confirmed && (
+      {revealed && (
         <div className={styles.actions}>
-          <button type="button" className={styles.primary} onClick={confirm}>
-            确认菜单并打卡
-          </button>
           <button type="button" className={styles.secondary} onClick={reroll}>
             换一组菜单
           </button>
-        </div>
-      )}
-
-      {confirmed && (
-        <div className={styles.done}>
-          <span className={styles.doneIcon}><CheckIcon size={18} /></span>
-          <div>
-            <strong>今日打卡完成</strong>
-            <p>菜单已保存，明天见。</p>
-          </div>
         </div>
       )}
 

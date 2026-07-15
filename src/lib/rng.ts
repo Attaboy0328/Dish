@@ -27,8 +27,3 @@ export function yesterdayKey(date = new Date()): string {
   return todayKey(d)
 }
 
-export function daysBetween(a: string, b: string): number {
-  const da = new Date(a + 'T12:00:00')
-  const db = new Date(b + 'T12:00:00')
-  return Math.round((db.getTime() - da.getTime()) / 86400000)
-}

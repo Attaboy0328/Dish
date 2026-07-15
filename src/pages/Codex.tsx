@@ -39,8 +39,7 @@ export function Codex({ game }: Props) {
 
       <section className={styles.progress} aria-label={`共 ${recipes.length} 道菜`}>
         <p>
-          图鉴收录全部家常菜。凉菜默认不进今日抽奖，可在「今日」勾选「包含凉菜」。当前连吃{' '}
-          {game.state.streak} 天。
+          图鉴收录全部家常菜。凉菜、海鲜默认不进今日抽奖，可在「今日」勾选包含。
         </p>
       </section>
 

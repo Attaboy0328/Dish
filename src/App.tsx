@@ -12,7 +12,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout game={game} />}>
+        <Route element={<Layout />}>
           <Route index element={<Home game={game} />} />
           <Route path="codex" element={<Codex game={game} />} />
           <Route path="settings" element={<Settings game={game} />} />
