@@ -1,0 +1,91 @@
+.card {
+  border: none;
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: 14px;
+  text-align: left;
+  box-shadow: var(--shadow);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--accent, var(--chili));
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--soy);
+}
+
+.sub {
+  margin: 2px 0 0;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(42, 26, 18, 0.08);
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.badge.rare {
+  background: rgba(61, 107, 154, 0.18);
+  color: var(--rare);
+}
+
+.badge.legendary {
+  background: rgba(184, 134, 11, 0.2);
+  color: var(--legendary);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.tag {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(196, 60, 44, 0.08);
+  color: var(--chili-deep);
+}
