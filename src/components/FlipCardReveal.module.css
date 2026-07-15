@@ -19,7 +19,7 @@
   border: none;
   background: transparent;
   padding: 0;
-  aspect-ratio: 0.72;
+  aspect-ratio: 0.88;
   cursor: pointer;
   position: relative;
 }
@@ -64,8 +64,8 @@
 .front {
   background: var(--paper);
   flex-direction: column;
-  gap: 6px;
-  padding: 10px;
+  gap: 4px;
+  padding: 8px 6px;
   border: 1px solid var(--line);
   transform: rotateY(180deg);
 }
@@ -79,15 +79,16 @@
 }
 
 .emoji {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 1;
 }
 
 .name {
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 680;
   text-align: center;
   color: var(--ink);
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .hint {

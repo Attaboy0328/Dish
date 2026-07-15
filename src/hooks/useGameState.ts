@@ -8,17 +8,40 @@ import { defaultState, loadState, normalizeDishCount, saveState } from '../lib/s
 const recipes = recipesData as Recipe[]
 
 function yesterdayIdsFor(state: GameState): string[] {
-  if (!state.avoidYesterday) return []
   if (state.yesterdayDate === yesterdayKey()) return state.yesterdayIds
   return state.yesterdayIds
 }
 
+function fallbackPool(state: GameState) {
+  return recipes.filter((r) => {
+    if (!state.includeColdDishes && r.category === '凉菜') return false
+    if (!state.includeSeafood && r.protein === '海鲜') return false
+    return true
+  })
+}
+
 function drawForState(state: GameState, seed: string) {
-  const yIds = yesterdayIdsFor(state)
-  const pool = buildPool(recipes, state.avoidYesterday, yIds, state.includeColdDishes)
+  const pool = buildPool(recipes, {
+    yesterdayIds: yesterdayIdsFor(state),
+    includeColdDishes: state.includeColdDishes,
+    includeSeafood: state.includeSeafood,
+  })
   const count = normalizeDishCount(state.dishCount)
-  const source = pool.length >= count ? pool : buildPool(recipes, false, [], state.includeColdDishes)
-  return drawRecipes(source.length >= count ? source : recipes.filter((r) => state.includeColdDishes || r.category !== '凉菜'), seed, count)
+  const source = pool.length >= count ? pool : fallbackPool(state)
+  return drawRecipes(source.length >= count ? source : recipes, seed, count)
+}
+
+function todaySlot(state: GameState, recipeIds: string[], rerollsLeft: number) {
+  return {
+    date: todayKey(),
+    recipeIds,
+    dishCount: normalizeDishCount(state.dishCount),
+    includeColdDishes: state.includeColdDishes,
+    includeSeafood: state.includeSeafood,
+    rerollsLeft,
+    confirmed: false,
+    revealed: false,
+  }
 }
 
 export function useGameState() {
@@ -56,15 +79,7 @@ export function useGameState() {
         const picks = drawForState(next, `${today}#0`)
         next = {
           ...next,
-          today: {
-            date: today,
-            recipeIds: picks.map((p) => p.id),
-            dishCount: normalizeDishCount(next.dishCount),
-            includeColdDishes: next.includeColdDishes,
-            rerollsLeft: 1,
-            confirmed: false,
-            revealed: false,
-          },
+          today: todaySlot(next, picks.map((p) => p.id), 1),
         }
       }
 
@@ -86,18 +101,13 @@ export function useGameState() {
       const today = todayKey()
       const rerollsLeft = keepRerolls ?? base.today?.rerollsLeft ?? 1
       const attempt = Math.max(0, 1 - rerollsLeft)
-      const picks = drawForState(base, `${today}#opt${base.dishCount}${base.includeColdDishes ? 'c' : 'n'}#${attempt}`)
+      const picks = drawForState(
+        base,
+        `${today}#opt${base.dishCount}${base.includeColdDishes ? 'c' : 'n'}${base.includeSeafood ? 's' : 'x'}#${attempt}`,
+      )
       const next = {
         ...base,
-        today: {
-          date: today,
-          recipeIds: picks.map((p) => p.id),
-          dishCount: normalizeDishCount(base.dishCount),
-          includeColdDishes: base.includeColdDishes,
-          rerollsLeft,
-          confirmed: false,
-          revealed: false,
-        },
+        today: todaySlot(base, picks.map((p) => p.id), rerollsLeft),
       }
       persist(next)
       return next
@@ -121,13 +131,7 @@ export function useGameState() {
     persist({
       ...state,
       today: {
-        date: today,
-        recipeIds: picks.map((p) => p.id),
-        dishCount: normalizeDishCount(state.dishCount),
-        includeColdDishes: state.includeColdDishes,
-        rerollsLeft: state.today.rerollsLeft - 1,
-        confirmed: false,
-        revealed: false,
+        ...todaySlot(state, picks.map((p) => p.id), state.today.rerollsLeft - 1),
       },
     })
   }, [state, persist])
@@ -160,13 +164,6 @@ export function useGameState() {
     [state, persist],
   )
 
-  const setAvoidYesterday = useCallback(
-    (value: boolean) => {
-      persist({ ...state, avoidYesterday: value })
-    },
-    [state, persist],
-  )
-
   const setIncludeColdDishes = useCallback(
     (value: boolean) => {
       if (state.today?.confirmed) {
@@ -174,6 +171,17 @@ export function useGameState() {
         return
       }
       redrawToday({ ...state, includeColdDishes: value })
+    },
+    [state, persist, redrawToday],
+  )
+
+  const setIncludeSeafood = useCallback(
+    (value: boolean) => {
+      if (state.today?.confirmed) {
+        persist({ ...state, includeSeafood: value })
+        return
+      }
+      redrawToday({ ...state, includeSeafood: value })
     },
     [state, persist, redrawToday],
   )
@@ -195,15 +203,7 @@ export function useGameState() {
     const picks = drawForState(fresh, `${today}#0`)
     persist({
       ...fresh,
-      today: {
-        date: today,
-        recipeIds: picks.map((p) => p.id),
-        dishCount: 3,
-        includeColdDishes: false,
-        rerollsLeft: 1,
-        confirmed: false,
-        revealed: false,
-      },
+      today: todaySlot(fresh, picks.map((p) => p.id), 1),
     })
   }, [persist])
 
@@ -215,8 +215,8 @@ export function useGameState() {
     reroll,
     confirm,
     setRevealMode,
-    setAvoidYesterday,
     setIncludeColdDishes,
+    setIncludeSeafood,
     setDishCount,
     reset,
   }

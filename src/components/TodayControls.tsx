@@ -4,13 +4,13 @@ import styles from './TodayControls.module.css'
 
 type Props = {
   mode: RevealMode
-  avoidYesterday: boolean
   includeColdDishes: boolean
+  includeSeafood: boolean
   dishCount: DishCount
   disabled?: boolean
   onModeChange: (mode: RevealMode) => void
-  onAvoidChange: (value: boolean) => void
   onIncludeColdChange: (value: boolean) => void
+  onIncludeSeafoodChange: (value: boolean) => void
   onDishCountChange: (count: DishCount) => void
 }
 
@@ -24,13 +24,13 @@ const counts: DishCount[] = [2, 3, 4, 5]
 
 export function TodayControls({
   mode,
-  avoidYesterday,
   includeColdDishes,
+  includeSeafood,
   dishCount,
   disabled = false,
   onModeChange,
-  onAvoidChange,
   onIncludeColdChange,
+  onIncludeSeafoodChange,
   onDishCountChange,
 }: Props) {
   return (
@@ -83,22 +83,6 @@ export function TodayControls({
       <div className={styles.toggles}>
         <label className={styles.avoid}>
           <span className={styles.avoidText}>
-            <strong>避开昨日</strong>
-            <small>下次抽取生效</small>
-          </span>
-          <input
-            type="checkbox"
-            checked={avoidYesterday}
-            disabled={disabled}
-            onChange={(event) => onAvoidChange(event.target.checked)}
-          />
-          <span className={styles.switch} aria-hidden="true">
-            <span />
-          </span>
-        </label>
-
-        <label className={styles.avoid}>
-          <span className={styles.avoidText}>
             <strong>包含凉菜</strong>
             <small>默认不抽凉菜</small>
           </span>
@@ -107,6 +91,22 @@ export function TodayControls({
             checked={includeColdDishes}
             disabled={disabled}
             onChange={(event) => onIncludeColdChange(event.target.checked)}
+          />
+          <span className={styles.switch} aria-hidden="true">
+            <span />
+          </span>
+        </label>
+
+        <label className={styles.avoid}>
+          <span className={styles.avoidText}>
+            <strong>包含海鲜</strong>
+            <small>默认不抽海鲜</small>
+          </span>
+          <input
+            type="checkbox"
+            checked={includeSeafood}
+            disabled={disabled}
+            onChange={(event) => onIncludeSeafoodChange(event.target.checked)}
           />
           <span className={styles.switch} aria-hidden="true">
             <span />

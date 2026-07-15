@@ -20,8 +20,8 @@ export function Home({ game }: Props) {
     reroll,
     confirm,
     setRevealMode,
-    setAvoidYesterday,
     setIncludeColdDishes,
+    setIncludeSeafood,
     setDishCount,
   } = game
   const [selected, setSelected] = useState<Recipe | null>(null)
@@ -29,6 +29,7 @@ export function Home({ game }: Props) {
   const confirmed = state.today?.confirmed ?? false
   const mode = state.revealMode
   const count = state.dishCount
+  const canReroll = (state.today?.rerollsLeft ?? 0) > 0
 
   const Reveal =
     mode === 'flip' ? FlipCardReveal : mode === 'wheel' ? WheelReveal : BlindBoxReveal
@@ -36,12 +37,10 @@ export function Home({ game }: Props) {
   return (
     <div className={styles.page}>
       <header className={styles.hero}>
-        <div>
+        <div className={styles.heroCopy}>
           <p className={styles.eyebrow}>{confirmed ? '今日菜单已确定' : '今日菜单'}</p>
-          <h2>
-            {confirmed
-              ? '安心开饭吧'
-              : `${count} 道菜，交给一点运气`}
+          <h2 className={styles.headline}>
+            {confirmed ? '安心开饭吧' : '今天吃啥交给运气'}
           </h2>
         </div>
         <span className={`${styles.status} ${confirmed ? styles.statusDone : ''}`}>
@@ -52,20 +51,20 @@ export function Home({ game }: Props) {
 
       <TodayControls
         mode={mode}
-        avoidYesterday={state.avoidYesterday}
         includeColdDishes={state.includeColdDishes}
+        includeSeafood={state.includeSeafood}
         dishCount={count}
         disabled={confirmed}
         onModeChange={setRevealMode}
-        onAvoidChange={setAvoidYesterday}
         onIncludeColdChange={setIncludeColdDishes}
+        onIncludeSeafoodChange={setIncludeSeafood}
         onDishCountChange={setDishCount}
       />
 
       <section className={styles.stage}>
         {todayRecipes.length > 0 && (
           <Reveal
-            key={`${state.today?.date}-${state.today?.rerollsLeft}-${mode}-${count}-${state.includeColdDishes}`}
+            key={`${state.today?.date}-${state.today?.rerollsLeft}-${mode}-${count}-${state.includeColdDishes}-${state.includeSeafood}`}
             recipes={todayRecipes}
             alreadyRevealed={revealed}
             onComplete={markRevealed}
@@ -87,14 +86,11 @@ export function Home({ game }: Props) {
           <button type="button" className={styles.primary} onClick={confirm}>
             确认菜单并打卡
           </button>
-          <button
-            type="button"
-            className={styles.secondary}
-            onClick={reroll}
-            disabled={(state.today?.rerollsLeft ?? 0) <= 0}
-          >
-            {state.today?.rerollsLeft ? '换一组菜单' : '今日已换过一次'}
-          </button>
+          {canReroll && (
+            <button type="button" className={styles.secondary} onClick={reroll}>
+              换一组菜单
+            </button>
+          )}
         </div>
       )}
 
@@ -103,7 +99,7 @@ export function Home({ game }: Props) {
           <span className={styles.doneIcon}><CheckIcon size={18} /></span>
           <div>
             <strong>今日打卡完成</strong>
-            <p>菜单已保存，明天会避开这些菜。</p>
+            <p>菜单已保存，明天见。</p>
           </div>
         </div>
       )}

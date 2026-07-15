@@ -1,15 +1,18 @@
 import type { Recipe } from '../types/recipe'
 import { createRng } from './rng'
 
-export function buildPool(
-  recipes: Recipe[],
-  avoidYesterday: boolean,
-  yesterdayIds: string[],
-  includeColdDishes: boolean,
-): Recipe[] {
+export type PoolOptions = {
+  yesterdayIds: string[]
+  includeColdDishes: boolean
+  includeSeafood: boolean
+}
+
+export function buildPool(recipes: Recipe[], options: PoolOptions): Recipe[] {
+  const { yesterdayIds, includeColdDishes, includeSeafood } = options
   return recipes.filter((r) => {
     if (!includeColdDishes && r.category === '凉菜') return false
-    if (avoidYesterday && yesterdayIds.includes(r.id)) return false
+    if (!includeSeafood && r.protein === '海鲜') return false
+    if (yesterdayIds.includes(r.id)) return false
     return true
   })
 }

@@ -20,8 +20,8 @@ export type GameState = {
   streak: number
   lastCheckInDate: string | null
   revealMode: RevealMode
-  avoidYesterday: boolean
   includeColdDishes: boolean
+  includeSeafood: boolean
   dishCount: DishCount
   yesterdayIds: string[]
   yesterdayDate: string | null
@@ -30,6 +30,7 @@ export type GameState = {
     recipeIds: string[]
     dishCount: DishCount
     includeColdDishes: boolean
+    includeSeafood: boolean
     rerollsLeft: number
     confirmed: boolean
     revealed: boolean

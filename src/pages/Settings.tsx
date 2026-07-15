@@ -62,7 +62,7 @@ export function Settings({ game }: Props) {
 
       <footer className={styles.note}>
         <strong>开饭盒子</strong>
-        <span>版本 1.2 · 几道随你选，够吃不纠结</span>
+        <span>版本 1.3 · 几道随你选，够吃不纠结</span>
       </footer>
     </div>
   )
