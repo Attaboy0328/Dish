@@ -31,17 +31,22 @@ function drawForState(state: GameState, seed: string) {
   return drawRecipes(source.length >= count ? source : recipes, seed, count)
 }
 
-function todaySlot(state: GameState, recipeIds: string[], rerollsLeft: number) {
+function todaySlot(state: GameState, recipeIds: string[], drawAttempt: number) {
   return {
     date: todayKey(),
     recipeIds,
     dishCount: normalizeDishCount(state.dishCount),
     includeColdDishes: state.includeColdDishes,
     includeSeafood: state.includeSeafood,
-    rerollsLeft,
+    drawAttempt,
     confirmed: false,
     revealed: false,
   }
+}
+
+function seedFor(state: GameState, attempt: number) {
+  const today = todayKey()
+  return `${today}#opt${state.dishCount}${state.includeColdDishes ? 'c' : 'n'}${state.includeSeafood ? 's' : 'x'}#${attempt}`
 }
 
 export function useGameState() {
@@ -76,10 +81,10 @@ export function useGameState() {
       }
 
       if (!next.today) {
-        const picks = drawForState(next, `${today}#0`)
+        const picks = drawForState(next, seedFor(next, 0))
         next = {
           ...next,
-          today: todaySlot(next, picks.map((p) => p.id), 1),
+          today: todaySlot(next, picks.map((p) => p.id), 0),
         }
       }
 
@@ -96,18 +101,13 @@ export function useGameState() {
   }, [state.today])
 
   const redrawToday = useCallback(
-    (base: GameState, keepRerolls?: number) => {
+    (base: GameState) => {
       if (base.today?.confirmed) return base
-      const today = todayKey()
-      const rerollsLeft = keepRerolls ?? base.today?.rerollsLeft ?? 1
-      const attempt = Math.max(0, 1 - rerollsLeft)
-      const picks = drawForState(
-        base,
-        `${today}#opt${base.dishCount}${base.includeColdDishes ? 'c' : 'n'}${base.includeSeafood ? 's' : 'x'}#${attempt}`,
-      )
+      const attempt = (base.today?.drawAttempt ?? 0) + 1
+      const picks = drawForState(base, seedFor(base, attempt))
       const next = {
         ...base,
-        today: todaySlot(base, picks.map((p) => p.id), rerollsLeft),
+        today: todaySlot(base, picks.map((p) => p.id), attempt),
       }
       persist(next)
       return next
@@ -124,17 +124,9 @@ export function useGameState() {
   }, [state, persist])
 
   const reroll = useCallback(() => {
-    if (!state.today || state.today.rerollsLeft <= 0 || state.today.confirmed) return
-    const today = todayKey()
-    const attempt = 2 - state.today.rerollsLeft
-    const picks = drawForState(state, `${today}#${attempt}`)
-    persist({
-      ...state,
-      today: {
-        ...todaySlot(state, picks.map((p) => p.id), state.today.rerollsLeft - 1),
-      },
-    })
-  }, [state, persist])
+    if (!state.today || state.today.confirmed) return
+    redrawToday(state)
+  }, [state, redrawToday])
 
   const confirm = useCallback(() => {
     if (!state.today || state.today.confirmed || !state.today.revealed) return
@@ -199,11 +191,10 @@ export function useGameState() {
 
   const reset = useCallback(() => {
     const fresh = defaultState()
-    const today = todayKey()
-    const picks = drawForState(fresh, `${today}#0`)
+    const picks = drawForState(fresh, seedFor(fresh, 0))
     persist({
       ...fresh,
-      today: todaySlot(fresh, picks.map((p) => p.id), 1),
+      today: todaySlot(fresh, picks.map((p) => p.id), 0),
     })
   }, [persist])
 

@@ -31,7 +31,8 @@ export type GameState = {
     dishCount: DishCount
     includeColdDishes: boolean
     includeSeafood: boolean
-    rerollsLeft: number
+    /** Seed counter for today's draws; unlimited rerolls before confirm */
+    drawAttempt: number
     confirmed: boolean
     revealed: boolean
   } | null

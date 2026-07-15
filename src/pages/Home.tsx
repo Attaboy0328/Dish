@@ -4,7 +4,6 @@ import type { Recipe } from '../types/recipe'
 import { BlindBoxReveal } from '../components/BlindBoxReveal'
 import { FlipCardReveal } from '../components/FlipCardReveal'
 import { WheelReveal } from '../components/WheelReveal'
-import { RecipeCard } from '../components/RecipeCard'
 import { RecipeDrawer } from '../components/RecipeDrawer'
 import { TodayControls } from '../components/TodayControls'
 import { CheckIcon } from '../components/Icons'
@@ -29,7 +28,6 @@ export function Home({ game }: Props) {
   const confirmed = state.today?.confirmed ?? false
   const mode = state.revealMode
   const count = state.dishCount
-  const canReroll = (state.today?.rerollsLeft ?? 0) > 0
 
   const Reveal =
     mode === 'flip' ? FlipCardReveal : mode === 'wheel' ? WheelReveal : BlindBoxReveal
@@ -64,7 +62,7 @@ export function Home({ game }: Props) {
       <section className={styles.stage}>
         {todayRecipes.length > 0 && (
           <Reveal
-            key={`${state.today?.date}-${state.today?.rerollsLeft}-${mode}-${count}-${state.includeColdDishes}-${state.includeSeafood}`}
+            key={`${state.today?.date}-${state.today?.drawAttempt}-${mode}-${count}-${state.includeColdDishes}-${state.includeSeafood}`}
             recipes={todayRecipes}
             alreadyRevealed={revealed}
             onComplete={markRevealed}
@@ -73,24 +71,14 @@ export function Home({ game }: Props) {
         )}
       </section>
 
-      {revealed && (
-        <div className={styles.list}>
-          {todayRecipes.map((r) => (
-            <RecipeCard key={r.id} recipe={r} onClick={() => setSelected(r)} />
-          ))}
-        </div>
-      )}
-
       {revealed && !confirmed && (
         <div className={styles.actions}>
           <button type="button" className={styles.primary} onClick={confirm}>
             确认菜单并打卡
           </button>
-          {canReroll && (
-            <button type="button" className={styles.secondary} onClick={reroll}>
-              换一组菜单
-            </button>
-          )}
+          <button type="button" className={styles.secondary} onClick={reroll}>
+            换一组菜单
+          </button>
         </div>
       )}
 

@@ -32,11 +32,6 @@
   margin-bottom: 14px;
 }
 
-.countSeg {
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 14px;
-}
-
 .toggles {
   display: flex;
   flex-direction: column;
@@ -126,8 +121,14 @@
   background: var(--surface-secondary);
 }
 
+.countSeg {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 14px;
+}
+
 .segment {
   min-height: 42px;
+  min-width: 0;
   border: 0;
   border-radius: 9px;
   background: transparent;
@@ -135,9 +136,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  font-size: 0.78rem;
+  gap: 4px;
+  font-size: 0.76rem;
   font-weight: 600;
+  white-space: nowrap;
   transition:
     color 180ms var(--ease-out),
     background 180ms var(--ease-out),
